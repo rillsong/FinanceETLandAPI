@@ -1,0 +1,25 @@
+[2024-12-15T15:49:25.626-0500] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_price_volume_etl.upsert_data_to_db manual__2024-12-15T20:48:41.907084+00:00 [queued]>
+[2024-12-15T15:49:25.633-0500] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_price_volume_etl.upsert_data_to_db manual__2024-12-15T20:48:41.907084+00:00 [queued]>
+[2024-12-15T15:49:25.634-0500] {taskinstance.py:1361} INFO - Starting attempt 1 of 3
+[2024-12-15T15:49:25.639-0500] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): upsert_data_to_db> on 2024-12-15 20:48:41.907084+00:00
+[2024-12-15T15:49:25.642-0500] {standard_task_runner.py:57} INFO - Started process 594 to run task
+[2024-12-15T15:49:25.644-0500] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'daily_price_volume_etl', 'upsert_data_to_db', 'manual__2024-12-15T20:48:41.907084+00:00', '--job-id', '438', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmp8it10img']
+[2024-12-15T15:49:25.646-0500] {standard_task_runner.py:85} INFO - Job 438: Subtask upsert_data_to_db
+[2024-12-15T15:49:25.667-0500] {task_command.py:416} INFO - Running <TaskInstance: daily_price_volume_etl.upsert_data_to_db manual__2024-12-15T20:48:41.907084+00:00 [running]> on host 1e0c6de054af
+[2024-12-15T15:49:25.709-0500] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='daily_price_volume_etl' AIRFLOW_CTX_TASK_ID='upsert_data_to_db' AIRFLOW_CTX_EXECUTION_DATE='2024-12-15T20:48:41.907084+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-15T20:48:41.907084+00:00'
+[2024-12-15T15:49:26.934-0500] {etl.py:305} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T15:49:27.091-0500] {etl.py:305} INFO - Inserted 12425 rows out of 12425 records
+[2024-12-15T15:49:27.113-0500] {etl.py:305} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T15:49:27.127-0500] {etl.py:305} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T15:49:27.192-0500] {etl.py:305} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T15:49:27.205-0500] {etl.py:305} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T15:49:27.304-0500] {etl.py:305} INFO - Inserted 500 rows out of 500 records
+[2024-12-15T15:49:27.556-0500] {etl.py:305} INFO - Inserted 12489 rows out of 12489 records
+[2024-12-15T15:49:27.569-0500] {etl.py:305} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T15:49:27.605-0500] {etl.py:305} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T15:49:27.638-0500] {etl.py:305} INFO - Inserted 12283 rows out of 12283 records
+[2024-12-15T15:49:27.641-0500] {etl.py:451} INFO - Upserted processed data to database
+[2024-12-15T15:49:27.642-0500] {python.py:194} INFO - Done. Returned value was: None
+[2024-12-15T15:49:27.647-0500] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=daily_price_volume_etl, task_id=upsert_data_to_db, execution_date=20241215T204841, start_date=20241215T204925, end_date=20241215T204927
+[2024-12-15T15:49:27.671-0500] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-12-15T15:49:27.680-0500] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

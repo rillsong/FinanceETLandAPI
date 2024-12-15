@@ -1,0 +1,153 @@
+[2024-12-15T15:30:02.635-0500] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_price_volume_etl.fetch_raw_data manual__2024-12-15T20:23:50.674160+00:00 [queued]>
+[2024-12-15T15:30:02.641-0500] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_price_volume_etl.fetch_raw_data manual__2024-12-15T20:23:50.674160+00:00 [queued]>
+[2024-12-15T15:30:02.641-0500] {taskinstance.py:1361} INFO - Starting attempt 2 of 3
+[2024-12-15T15:30:02.647-0500] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): fetch_raw_data> on 2024-12-15 20:23:50.674160+00:00
+[2024-12-15T15:30:02.649-0500] {standard_task_runner.py:57} INFO - Started process 578 to run task
+[2024-12-15T15:30:02.651-0500] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'daily_price_volume_etl', 'fetch_raw_data', 'manual__2024-12-15T20:23:50.674160+00:00', '--job-id', '412', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpyyp96qv1']
+[2024-12-15T15:30:02.653-0500] {standard_task_runner.py:85} INFO - Job 412: Subtask fetch_raw_data
+[2024-12-15T15:30:02.674-0500] {task_command.py:416} INFO - Running <TaskInstance: daily_price_volume_etl.fetch_raw_data manual__2024-12-15T20:23:50.674160+00:00 [running]> on host c8ba26a29f48
+[2024-12-15T15:30:02.766-0500] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='daily_price_volume_etl' AIRFLOW_CTX_TASK_ID='fetch_raw_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-15T20:23:50.674160+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-15T20:23:50.674160+00:00'
+[2024-12-15T15:32:24.274-0500] {base.py:128} ERROR - Failed to get ticker 'UNP' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:24.278-0500] {base.py:128} ERROR - Failed to get ticker 'SRE' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:29.577-0500] {base.py:128} ERROR - Failed to get ticker 'ACN' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:29.582-0500] {base.py:128} ERROR - Failed to get ticker 'FTNT' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:29.583-0500] {base.py:128} ERROR - Failed to get ticker 'KMB' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:29.667-0500] {base.py:128} ERROR - Failed to get ticker 'UBER' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:29.668-0500] {base.py:128} ERROR - Failed to get ticker 'PFG' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:29.670-0500] {base.py:128} ERROR - Failed to get ticker 'HSY' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:34.772-0500] {base.py:128} ERROR - Failed to get ticker 'AMP' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:34.773-0500] {base.py:128} ERROR - Failed to get ticker 'ORLY' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:34.967-0500] {base.py:128} ERROR - Failed to get ticker 'WMB' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:34.968-0500] {base.py:128} ERROR - Failed to get ticker 'PYPL' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:40.567-0500] {base.py:128} ERROR - Failed to get ticker 'PSX' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:40.671-0500] {base.py:128} ERROR - Failed to get ticker 'INTU' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:40.767-0500] {base.py:128} ERROR - Failed to get ticker 'WBD' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:40.774-0500] {base.py:128} ERROR - Failed to get ticker 'STE' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:40.776-0500] {base.py:128} ERROR - Failed to get ticker 'JBL' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:40.777-0500] {base.py:128} ERROR - Failed to get ticker 'MSI' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:40.778-0500] {base.py:128} ERROR - Failed to get ticker 'BWA' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:40.780-0500] {base.py:128} ERROR - Failed to get ticker 'C' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:45.770-0500] {base.py:128} ERROR - Failed to get ticker 'AJG' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:45.880-0500] {base.py:128} ERROR - Failed to get ticker 'EL' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:51.069-0500] {base.py:128} ERROR - Failed to get ticker 'BAC' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:51.070-0500] {base.py:128} ERROR - Failed to get ticker 'INTC' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:51.070-0500] {base.py:128} ERROR - Failed to get ticker 'SNPS' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:51.071-0500] {base.py:128} ERROR - Failed to get ticker 'KVUE' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:51.073-0500] {base.py:128} ERROR - Failed to get ticker 'AEP' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:51.073-0500] {base.py:128} ERROR - Failed to get ticker 'DOC' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:51.074-0500] {base.py:128} ERROR - Failed to get ticker 'RF' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:51.075-0500] {base.py:128} ERROR - Failed to get ticker 'ANSS' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:56.180-0500] {base.py:128} ERROR - Failed to get ticker 'TSN' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:32:56.280-0500] {base.py:128} ERROR - Failed to get ticker 'EQT' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:01.763-0500] {base.py:128} ERROR - Failed to get ticker 'NTRS' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:01.864-0500] {base.py:128} ERROR - Failed to get ticker 'AMAT' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:01.865-0500] {base.py:128} ERROR - Failed to get ticker 'EXR' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:01.867-0500] {base.py:128} ERROR - Failed to get ticker 'CNC' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:01.868-0500] {base.py:128} ERROR - Failed to get ticker 'MRO' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:01.871-0500] {base.py:128} ERROR - Failed to get ticker 'CMI' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:01.872-0500] {base.py:128} ERROR - Failed to get ticker 'OXY' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:01.873-0500] {base.py:128} ERROR - Failed to get ticker 'ROK' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:07.265-0500] {base.py:128} ERROR - Failed to get ticker 'KMX' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:07.471-0500] {base.py:128} ERROR - Failed to get ticker 'DVA' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:12.370-0500] {base.py:128} ERROR - Failed to get ticker 'CE' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:12.370-0500] {base.py:128} ERROR - Failed to get ticker 'LMT' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:12.372-0500] {base.py:128} ERROR - Failed to get ticker 'ALB' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:12.373-0500] {base.py:128} ERROR - Failed to get ticker 'AWK' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:12.374-0500] {base.py:128} ERROR - Failed to get ticker 'BKNG' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:12.466-0500] {base.py:128} ERROR - Failed to get ticker 'GILD' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:12.564-0500] {base.py:128} ERROR - Failed to get ticker 'XEL' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:12.564-0500] {base.py:128} ERROR - Failed to get ticker 'REGN' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:12.565-0500] {base.py:128} ERROR - Failed to get ticker 'HPE' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:18.973-0500] {base.py:128} ERROR - Failed to get ticker 'BXP' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:19.066-0500] {base.py:128} ERROR - Failed to get ticker 'MRNA' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:19.068-0500] {base.py:128} ERROR - Failed to get ticker 'PRU' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:19.072-0500] {base.py:128} ERROR - Failed to get ticker 'CVS' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:19.074-0500] {base.py:128} ERROR - Failed to get ticker 'CDNS' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:19.075-0500] {base.py:128} ERROR - Failed to get ticker 'DOW' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:19.081-0500] {base.py:128} ERROR - Failed to get ticker 'TEL' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:19.165-0500] {base.py:128} ERROR - Failed to get ticker 'NWS' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:19.165-0500] {base.py:128} ERROR - Failed to get ticker 'TYL' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:24.566-0500] {base.py:128} ERROR - Failed to get ticker 'CSCO' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:24.568-0500] {base.py:128} ERROR - Failed to get ticker 'GLW' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:24.568-0500] {base.py:128} ERROR - Failed to get ticker 'NOC' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:24.570-0500] {base.py:128} ERROR - Failed to get ticker 'UDR' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:24.571-0500] {base.py:128} ERROR - Failed to get ticker 'ZBRA' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:24.573-0500] {base.py:128} ERROR - Failed to get ticker 'VTRS' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:24.662-0500] {base.py:128} ERROR - Failed to get ticker 'MCHP' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:24.663-0500] {base.py:128} ERROR - Failed to get ticker 'AEE' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:24.663-0500] {base.py:128} ERROR - Failed to get ticker 'ETR' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:24.673-0500] {base.py:128} ERROR - Failed to get ticker 'STZ' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:30.865-0500] {base.py:128} ERROR - Failed to get ticker 'NCLH' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:30.867-0500] {base.py:128} ERROR - Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:30.967-0500] {base.py:128} ERROR - Failed to get ticker 'CAG' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:31.065-0500] {base.py:128} ERROR - Failed to get ticker 'OKE' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:31.069-0500] {base.py:128} ERROR - Failed to get ticker 'IPG' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:31.073-0500] {base.py:128} ERROR - Failed to get ticker 'DOV' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:31.163-0500] {base.py:128} ERROR - Failed to get ticker 'LH' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:31.164-0500] {base.py:128} ERROR - Failed to get ticker 'TFX' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:31.264-0500] {base.py:128} ERROR - Failed to get ticker 'MSCI' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:34.683-0500] {base.py:128} ERROR - Failed to get ticker 'MAA' reason: HTTPSConnectionPool(host='query2.finance.yahoo.com', port=443): Read timed out. (read timeout=10)
+[2024-12-15T15:33:37.068-0500] {base.py:128} ERROR - Failed to get ticker 'RTX' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:37.174-0500] {base.py:128} ERROR - Failed to get ticker 'GM' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:37.175-0500] {base.py:128} ERROR - Failed to get ticker 'TXT' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:37.177-0500] {base.py:128} ERROR - Failed to get ticker 'ETSY' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:37.270-0500] {base.py:128} ERROR - Failed to get ticker 'PEG' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:37.368-0500] {base.py:128} ERROR - Failed to get ticker 'UPS' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:37.370-0500] {base.py:128} ERROR - Failed to get ticker 'STX' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:37.373-0500] {base.py:128} ERROR - Failed to get ticker 'CCL' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:37.373-0500] {base.py:128} ERROR - Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:46.968-0500] {base.py:128} ERROR - Failed to get ticker 'FIS' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:46.970-0500] {base.py:128} ERROR - Failed to get ticker 'ADP' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:52.470-0500] {base.py:128} ERROR - Failed to get ticker 'TJX' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:52.472-0500] {base.py:128} ERROR - Failed to get ticker 'DD' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:52.475-0500] {base.py:128} ERROR - Failed to get ticker 'KKR' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:52.476-0500] {base.py:128} ERROR - Failed to get ticker 'AVGO' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:52.477-0500] {base.py:128} ERROR - Failed to get ticker 'OMC' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:52.478-0500] {base.py:128} ERROR - Failed to get ticker 'AMT' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:52.484-0500] {base.py:128} ERROR - Failed to get ticker 'CMG' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:52.664-0500] {base.py:128} ERROR - Failed to get ticker 'MKTX' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:57.476-0500] {base.py:128} ERROR - Failed to get ticker 'GNRC' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:33:57.571-0500] {base.py:128} ERROR - Failed to get ticker 'BBY' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:34:02.572-0500] {base.py:128} ERROR - Failed to get ticker 'SBAC' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:34:02.573-0500] {base.py:128} ERROR - Failed to get ticker 'NDAQ' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:34:02.575-0500] {base.py:128} ERROR - Failed to get ticker 'DE' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:34:02.576-0500] {base.py:128} ERROR - Failed to get ticker 'JBHT' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:34:02.665-0500] {base.py:128} ERROR - Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:34:02.668-0500] {base.py:128} ERROR - Failed to get ticker 'CLX' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:34:02.669-0500] {base.py:128} ERROR - Failed to get ticker 'AZO' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:34:06.318-0500] {base.py:128} ERROR - Failed to get ticker 'MOS' reason: HTTPSConnectionPool(host='query2.finance.yahoo.com', port=443): Read timed out. (read timeout=10)
+[2024-12-15T15:34:08.076-0500] {base.py:128} ERROR - Failed to get ticker 'AOS' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:34:08.171-0500] {base.py:128} ERROR - Failed to get ticker 'GPN' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:34:12.869-0500] {base.py:128} ERROR - Failed to get ticker 'CTLT' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:34:12.871-0500] {base.py:128} ERROR - Failed to get ticker 'LLY' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:34:12.871-0500] {base.py:128} ERROR - Failed to get ticker 'MAS' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:34:12.871-0500] {base.py:128} ERROR - Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:34:12.872-0500] {base.py:128} ERROR - Failed to get ticker 'BEN' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:34:12.873-0500] {base.py:128} ERROR - Failed to get ticker 'SBUX' reason: Expecting value: line 1 column 1 (char 0)
+[2024-12-15T15:34:12.879-0500] {multi.py:176} ERROR - 
+220 Failed downloads:
+[2024-12-15T15:34:12.880-0500] {multi.py:189} ERROR - ['GPC']: SSLError(MaxRetryError("HTTPSConnectionPool(host='sg.yahoo.com', port=443): Max retries exceeded with url: /?p=us (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)')))"))
+[2024-12-15T15:34:12.880-0500] {multi.py:189} ERROR - ['DPZ', 'BLDR', 'CMS', 'ALLE', 'MTB', 'SW', 'HLT', 'EIX', 'ALL', 'PANW', 'CZR', 'BRK-B', 'EBAY', 'HII', 'ED', 'HOLX', 'CFG', 'LVS', 'BAX', 'AME', 'RCL', 'KIM', 'ARE', 'HSIC', 'NI', 'ABBV', 'GRMN', 'APTV', 'AMCR', 'PKG', 'RSG', 'NWSA', 'NKE', 'ROP', 'AFL', 'UHS', 'IT', 'UNH', 'CF', 'MAR', 'PTC', 'AVY', 'UAL', 'NSC', 'BKR', 'DUK', 'TPR', 'TSCO', 'EMR', 'ENPH', 'INVH', 'SOLV', 'MO', 'ITW', 'MDLZ', 'PWR', 'EQR', 'AAL', 'BALL', 'MMC', 'T', 'ALGN', 'EOG', 'LRCX', 'BDX', 'COP', 'MTCH', 'EXPE', 'KMI', 'NUE', 'VLTO', 'CSGP', 'JNPR', 'APD', 'DXCM', 'KEY', 'CTRA', 'BRO', 'SPGI', 'ATO', 'CME', 'JCI', 'MTD', 'RJF', 'ADM', 'CPT', 'RL', 'HIG', 'BBWI', 'PFE', 'MCO', 'DVN', 'WEC', 'DFS', 'RVTY', 'GS', 'BLK', 'ROST', 'TER']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+[2024-12-15T15:34:12.880-0500] {multi.py:189} ERROR - ['JKHY', 'AON']: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(host='query2.finance.yahoo.com', port=443): Read timed out. (read timeout=10)"))
+[2024-12-15T15:34:12.880-0500] {multi.py:189} ERROR - ['ON']: JS%ticker%DecodeError('Expecting value: line 1 column 1 (char 0)')
+[2024-12-15T15:34:12.880-0500] {multi.py:189} ERROR - ['UNP', 'SRE', 'ACN', 'FTNT', 'KMB', 'UBER', 'PFG', 'HSY', 'AMP', 'ORLY', 'WMB', 'PYPL', 'PSX', 'INTU', 'WBD', 'STE', 'JBL', 'MSI', 'BWA', 'C', 'AJG', 'EL', 'BAC', 'INTC', 'SNPS', 'KVUE', 'AEP', 'DOC', 'RF', 'ANSS', 'TSN', 'EQT', 'NTRS', 'AMAT', 'EXR', 'CNC', 'MRO', 'CMI', 'OXY', 'ROK', 'KMX', 'DVA', 'CE', 'LMT', 'ALB', 'AWK', 'BKNG', 'GILD', 'XEL', 'REGN', 'HPE', 'BXP', 'MRNA', 'PRU', 'CVS', 'CDNS', 'DOW', 'TEL', 'NWS', 'TYL', 'CSCO', 'GLW', 'NOC', 'UDR', 'ZBRA', 'VTRS', 'MCHP', 'AEE', 'ETR', 'STZ', 'NCLH', 'TSLA', 'CAG', 'OKE', 'IPG', 'DOV', 'LH', 'TFX', 'MSCI', 'MAA', 'RTX', 'GM', 'TXT', 'ETSY', 'PEG', 'UPS', 'CCL', 'STX', 'MSFT', 'FIS', 'ADP', 'TJX', 'DD', 'KKR', 'AVGO', 'OMC', 'AMT', 'CMG', 'MKTX', 'GNRC', 'BBY', 'SBAC', 'NDAQ', 'DE', 'JBHT', 'NVDA', 'CLX', 'AZO', 'MOS', 'AOS', 'GPN', 'CTLT', 'LLY', 'MAS', 'AMZN', 'BEN', 'SBUX']: YFTzMissingError('$%ticker%: possibly delisted; no timezone found')
+[2024-12-15T15:34:13.149-0500] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/context.py:314: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2024-12-15T15:34:13.149-0500] {etl.py:405} INFO - Raw data saved to /opt/***/dags/src/../../landing_zone/daily_price_volume_etl/fetch_raw_data/2024-12-15T20:23:50.674160+00:00raw_data.csv
+[2024-12-15T15:34:13.459-0500] {python.py:194} INFO - Done. Returned value was: Price       Date Ticker   Adj Close  ...         Low        Open      Volume
+0     2023-12-11      A  128.101379  ...  127.220001  127.620003   1897100.0
+1     2023-12-11   AAPL  192.238220  ...  191.419998  193.110001  60943700.0
+2     2023-12-11   ABNB  142.910004  ...  140.850006  141.360001   4560500.0
+3     2023-12-11    ABT  104.141731  ...  104.209999  104.209999   5208200.0
+4     2023-12-11   ACGL   75.701035  ...   79.330002   79.330002   1320000.0
+...          ...    ...         ...  ...         ...         ...         ...
+70953 2024-12-09    XOM  112.900002  ...  112.750000  114.639999  17412600.0
+70954 2024-12-09    XYL  129.350006  ...  127.199997  127.589996   1933700.0
+70955 2024-12-09    YUM  139.080002  ...  137.279999  137.880005   1411000.0
+70956 2024-12-09    ZBH  109.470001  ...  107.779999  108.059998   1243000.0
+70957 2024-12-09    ZTS  178.149994  ...  175.080002  175.880005   2387300.0
+
+[70958 rows x 8 columns]
+[2024-12-15T15:34:13.735-0500] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=daily_price_volume_etl, task_id=fetch_raw_data, execution_date=20241215T202350, start_date=20241215T203002, end_date=20241215T203413
+[2024-12-15T15:34:13.771-0500] {local_task_job_runner.py:228} INFO - Task exited with return code 0

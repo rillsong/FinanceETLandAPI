@@ -1,0 +1,528 @@
+[2024-12-15T00:34:27.103+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_price_volume_etl.run_price_volume_pipeline scheduled__2024-12-14T00:00:00+00:00 [queued]>
+[2024-12-15T00:34:27.108+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_price_volume_etl.run_price_volume_pipeline scheduled__2024-12-14T00:00:00+00:00 [queued]>
+[2024-12-15T00:34:27.108+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2024-12-15T00:34:27.120+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): run_price_volume_pipeline> on 2024-12-14 00:00:00+00:00
+[2024-12-15T00:34:27.126+0000] {standard_task_runner.py:57} INFO - Started process 80 to run task
+[2024-12-15T00:34:27.128+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'daily_price_volume_etl', 'run_price_volume_pipeline', 'scheduled__2024-12-14T00:00:00+00:00', '--job-id', '26', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpmmtkdw8_']
+[2024-12-15T00:34:27.129+0000] {standard_task_runner.py:85} INFO - Job 26: Subtask run_price_volume_pipeline
+[2024-12-15T00:34:27.155+0000] {task_command.py:416} INFO - Running <TaskInstance: daily_price_volume_etl.run_price_volume_pipeline scheduled__2024-12-14T00:00:00+00:00 [running]> on host 3886162e3fde
+[2024-12-15T00:34:27.251+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='daily_price_volume_etl' AIRFLOW_CTX_TASK_ID='run_price_volume_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2024-12-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-14T00:00:00+00:00'
+[2024-12-15T00:34:35.289+0000] {logging_mixin.py:154} WARNING - [                       0%                       ]
+[2024-12-15T00:34:35.325+0000] {logging_mixin.py:154} WARNING - [                       0%                       ]  2 of 503 completed
+[2024-12-15T00:34:35.327+0000] {logging_mixin.py:154} WARNING - [                       0%                       ]  2 of 503 completed
+[2024-12-15T00:34:35.330+0000] {logging_mixin.py:154} WARNING - [                       1%                       ]  4 of 503 completed
+[2024-12-15T00:34:35.340+0000] {logging_mixin.py:154} WARNING - [                       1%                       ]  5 of 503 completed
+[2024-12-15T00:34:35.381+0000] {logging_mixin.py:154} WARNING - [                       1%                       ]  6 of 503 completed
+[2024-12-15T00:34:35.392+0000] {logging_mixin.py:154} WARNING - [                       1%                       ]  7 of 503 completed
+[2024-12-15T00:34:35.397+0000] {logging_mixin.py:154} WARNING - [                       1%                       ]  7 of 503 completed
+[2024-12-15T00:34:35.405+0000] {logging_mixin.py:154} WARNING - [                       1%                       ]  7 of 503 completed
+[2024-12-15T00:34:36.282+0000] {logging_mixin.py:154} WARNING - [*                      2%                       ]  10 of 503 completed
+[2024-12-15T00:34:36.295+0000] {logging_mixin.py:154} WARNING - [*                      2%                       ]  11 of 503 completed
+[2024-12-15T00:34:36.872+0000] {logging_mixin.py:154} WARNING - [*                      2%                       ]  12 of 503 completed
+[2024-12-15T00:34:37.406+0000] {logging_mixin.py:154} WARNING - [*                      3%                       ]  13 of 503 completed
+[2024-12-15T00:34:37.416+0000] {logging_mixin.py:154} WARNING - [*                      3%                       ]  13 of 503 completed
+[2024-12-15T00:34:37.472+0000] {logging_mixin.py:154} WARNING - [*                      3%                       ]  15 of 503 completed
+[2024-12-15T00:34:37.475+0000] {logging_mixin.py:154} WARNING - [*                      3%                       ]  15 of 503 completed
+[2024-12-15T00:34:37.486+0000] {logging_mixin.py:154} WARNING - [*                      3%                       ]  17 of 503 completed
+[2024-12-15T00:34:37.492+0000] {logging_mixin.py:154} WARNING - [*                      3%                       ]  17 of 503 completed
+[2024-12-15T00:34:37.500+0000] {logging_mixin.py:154} WARNING - [*                      3%                       ]  17 of 503 completed
+[2024-12-15T00:34:37.833+0000] {logging_mixin.py:154} WARNING - [**                     4%                       ]  20 of 503 completed
+[2024-12-15T00:34:37.841+0000] {logging_mixin.py:154} WARNING - [**                     4%                       ]  21 of 503 completed
+[2024-12-15T00:34:38.265+0000] {logging_mixin.py:154} WARNING - [**                     4%                       ]  22 of 503 completed
+[2024-12-15T00:34:38.677+0000] {logging_mixin.py:154} WARNING - [**                     5%                       ]  23 of 503 completed
+[2024-12-15T00:34:38.712+0000] {logging_mixin.py:154} WARNING - [**                     5%                       ]  24 of 503 completed
+[2024-12-15T00:34:38.874+0000] {logging_mixin.py:154} WARNING - [**                     5%                       ]  25 of 503 completed
+[2024-12-15T00:34:38.878+0000] {logging_mixin.py:154} WARNING - [**                     5%                       ]  26 of 503 completed
+[2024-12-15T00:34:38.958+0000] {logging_mixin.py:154} WARNING - [**                     5%                       ]  27 of 503 completed
+[2024-12-15T00:34:38.967+0000] {logging_mixin.py:154} WARNING - [***                    6%                       ]  28 of 503 completed
+[2024-12-15T00:34:38.976+0000] {logging_mixin.py:154} WARNING - [***                    6%                       ]  29 of 503 completed
+[2024-12-15T00:34:39.067+0000] {logging_mixin.py:154} WARNING - [***                    6%                       ]  30 of 503 completed
+[2024-12-15T00:34:39.165+0000] {logging_mixin.py:154} WARNING - [***                    6%                       ]  31 of 503 completed
+[2024-12-15T00:34:39.686+0000] {logging_mixin.py:154} WARNING - [***                    6%                       ]  32 of 503 completed
+[2024-12-15T00:34:39.863+0000] {logging_mixin.py:154} WARNING - [***                    7%                       ]  33 of 503 completed
+[2024-12-15T00:34:39.872+0000] {logging_mixin.py:154} WARNING - [***                    7%                       ]  33 of 503 completed
+[2024-12-15T00:34:40.060+0000] {logging_mixin.py:154} WARNING - [***                    7%                       ]  35 of 503 completed
+[2024-12-15T00:34:40.167+0000] {logging_mixin.py:154} WARNING - [***                    7%                       ]  36 of 503 completed
+[2024-12-15T00:34:40.177+0000] {logging_mixin.py:154} WARNING - [***                    7%                       ]  37 of 503 completed
+[2024-12-15T00:34:40.185+0000] {logging_mixin.py:154} WARNING - [***                    7%                       ]  37 of 503 completed
+[2024-12-15T00:34:40.271+0000] {logging_mixin.py:154} WARNING - [****                   8%                       ]  39 of 503 completed
+[2024-12-15T00:34:40.280+0000] {logging_mixin.py:154} WARNING - [****                   8%                       ]  39 of 503 completed
+[2024-12-15T00:34:40.420+0000] {logging_mixin.py:154} WARNING - [****                   8%                       ]  41 of 503 completed
+[2024-12-15T00:34:40.867+0000] {logging_mixin.py:154} WARNING - [****                   8%                       ]  42 of 503 completed
+[2024-12-15T00:34:41.155+0000] {logging_mixin.py:154} WARNING - [****                   9%                       ]  43 of 503 completed
+[2024-12-15T00:34:41.163+0000] {logging_mixin.py:154} WARNING - [****                   9%                       ]  43 of 503 completed
+[2024-12-15T00:34:41.589+0000] {logging_mixin.py:154} WARNING - [****                   9%                       ]  45 of 503 completed
+[2024-12-15T00:34:41.598+0000] {logging_mixin.py:154} WARNING - [****                   9%                       ]  46 of 503 completed
+[2024-12-15T00:34:41.808+0000] {logging_mixin.py:154} WARNING - [****                   9%                       ]  47 of 503 completed
+[2024-12-15T00:34:41.810+0000] {logging_mixin.py:154} WARNING - [****                   9%                       ]  47 of 503 completed
+[2024-12-15T00:34:41.867+0000] {logging_mixin.py:154} WARNING - [*****                 10%                       ]  49 of 503 completed
+[2024-12-15T00:34:41.877+0000] {logging_mixin.py:154} WARNING - [*****                 10%                       ]  50 of 503 completed
+[2024-12-15T00:34:41.887+0000] {logging_mixin.py:154} WARNING - [*****                 10%                       ]  51 of 503 completed
+[2024-12-15T00:34:42.261+0000] {logging_mixin.py:154} WARNING - [*****                 10%                       ]  52 of 503 completed
+[2024-12-15T00:34:42.682+0000] {logging_mixin.py:154} WARNING - [*****                 11%                       ]  53 of 503 completed
+[2024-12-15T00:34:42.684+0000] {logging_mixin.py:154} WARNING - [*****                 11%                       ]  53 of 503 completed
+[2024-12-15T00:34:43.214+0000] {logging_mixin.py:154} WARNING - [*****                 11%                       ]  55 of 503 completed
+[2024-12-15T00:34:43.222+0000] {logging_mixin.py:154} WARNING - [*****                 11%                       ]  56 of 503 completed
+[2024-12-15T00:34:43.257+0000] {logging_mixin.py:154} WARNING - [*****                 11%                       ]  57 of 503 completed
+[2024-12-15T00:34:43.266+0000] {logging_mixin.py:154} WARNING - [******                12%                       ]  58 of 503 completed
+[2024-12-15T00:34:43.486+0000] {logging_mixin.py:154} WARNING - [******                12%                       ]  59 of 503 completed
+[2024-12-15T00:34:43.516+0000] {logging_mixin.py:154} WARNING - [******                12%                       ]  60 of 503 completed
+[2024-12-15T00:34:43.570+0000] {logging_mixin.py:154} WARNING - [******                12%                       ]  61 of 503 completed
+[2024-12-15T00:34:43.597+0000] {logging_mixin.py:154} WARNING - [******                12%                       ]  62 of 503 completed
+[2024-12-15T00:34:43.975+0000] {logging_mixin.py:154} WARNING - [******                13%                       ]  63 of 503 completed
+[2024-12-15T00:34:44.060+0000] {logging_mixin.py:154} WARNING - [******                13%                       ]  64 of 503 completed
+[2024-12-15T00:34:44.578+0000] {logging_mixin.py:154} WARNING - [******                13%                       ]  65 of 503 completed
+[2024-12-15T00:34:44.598+0000] {logging_mixin.py:154} WARNING - [******                13%                       ]  66 of 503 completed
+[2024-12-15T00:34:44.618+0000] {logging_mixin.py:154} WARNING - [******                13%                       ]  67 of 503 completed
+[2024-12-15T00:34:44.620+0000] {logging_mixin.py:154} WARNING - [******                13%                       ]  67 of 503 completed
+[2024-12-15T00:34:44.766+0000] {logging_mixin.py:154} WARNING - [*******               14%                       ]  69 of 503 completed
+[2024-12-15T00:34:44.777+0000] {logging_mixin.py:154} WARNING - [*******               14%                       ]  70 of 503 completed
+[2024-12-15T00:34:44.899+0000] {logging_mixin.py:154} WARNING - [*******               14%                       ]  71 of 503 completed
+[2024-12-15T00:34:44.959+0000] {logging_mixin.py:154} WARNING - [*******               14%                       ]  72 of 503 completed
+[2024-12-15T00:34:45.173+0000] {logging_mixin.py:154} WARNING - [*******               15%                       ]  73 of 503 completed
+[2024-12-15T00:34:45.187+0000] {logging_mixin.py:154} WARNING - [*******               15%                       ]  74 of 503 completed
+[2024-12-15T00:34:46.180+0000] {logging_mixin.py:154} WARNING - [*******               15%                       ]  75 of 503 completed
+[2024-12-15T00:34:46.267+0000] {logging_mixin.py:154} WARNING - [*******               15%                       ]  76 of 503 completed
+[2024-12-15T00:34:46.278+0000] {logging_mixin.py:154} WARNING - [*******               15%                       ]  77 of 503 completed
+[2024-12-15T00:34:46.365+0000] {logging_mixin.py:154} WARNING - [********              16%                       ]  78 of 503 completed
+[2024-12-15T00:34:46.381+0000] {logging_mixin.py:154} WARNING - [********              16%                       ]  79 of 503 completed
+[2024-12-15T00:34:46.463+0000] {logging_mixin.py:154} WARNING - [********              16%                       ]  80 of 503 completed
+[2024-12-15T00:34:46.470+0000] {logging_mixin.py:154} WARNING - [********              16%                       ]  81 of 503 completed
+[2024-12-15T00:34:46.559+0000] {logging_mixin.py:154} WARNING - [********              16%                       ]  82 of 503 completed
+[2024-12-15T00:34:46.661+0000] {logging_mixin.py:154} WARNING - [********              17%                       ]  83 of 503 completed
+[2024-12-15T00:34:47.084+0000] {logging_mixin.py:154} WARNING - [********              17%                       ]  84 of 503 completed
+[2024-12-15T00:34:47.361+0000] {logging_mixin.py:154} WARNING - [********              17%                       ]  85 of 503 completed
+[2024-12-15T00:34:47.571+0000] {logging_mixin.py:154} WARNING - [********              17%                       ]  86 of 503 completed
+[2024-12-15T00:34:48.075+0000] {logging_mixin.py:154} WARNING - [********              17%                       ]  87 of 503 completed
+[2024-12-15T00:34:48.086+0000] {logging_mixin.py:154} WARNING - [********              17%                       ]  88 of 503 completed
+[2024-12-15T00:34:48.157+0000] {logging_mixin.py:154} WARNING - [*********             18%                       ]  89 of 503 completed
+[2024-12-15T00:34:48.185+0000] {logging_mixin.py:154} WARNING - [*********             18%                       ]  90 of 503 completed
+[2024-12-15T00:34:48.188+0000] {logging_mixin.py:154} WARNING - [*********             18%                       ]  91 of 503 completed
+[2024-12-15T00:34:48.193+0000] {logging_mixin.py:154} WARNING - [*********             18%                       ]  92 of 503 completed
+[2024-12-15T00:34:48.280+0000] {logging_mixin.py:154} WARNING - [*********             18%                       ]  93 of 503 completed
+[2024-12-15T00:34:48.939+0000] {logging_mixin.py:154} WARNING - [*********             19%                       ]  94 of 503 completed
+[2024-12-15T00:34:50.469+0000] {logging_mixin.py:154} WARNING - [*********             19%                       ]  95 of 503 completed
+[2024-12-15T00:34:50.675+0000] {logging_mixin.py:154} WARNING - [*********             19%                       ]  96 of 503 completed
+[2024-12-15T00:34:50.690+0000] {logging_mixin.py:154} WARNING - [*********             19%                       ]  97 of 503 completed
+[2024-12-15T00:34:50.709+0000] {logging_mixin.py:154} WARNING - [*********             19%                       ]  98 of 503 completed
+[2024-12-15T00:34:50.710+0000] {logging_mixin.py:154} WARNING - [*********             19%                       ]  98 of 503 completed
+[2024-12-15T00:34:50.763+0000] {logging_mixin.py:154} WARNING - [**********            20%                       ]  100 of 503 completed
+[2024-12-15T00:34:50.771+0000] {logging_mixin.py:154} WARNING - [**********            20%                       ]  101 of 503 completed
+[2024-12-15T00:34:50.779+0000] {logging_mixin.py:154} WARNING - [**********            20%                       ]  102 of 503 completed
+[2024-12-15T00:34:50.787+0000] {logging_mixin.py:154} WARNING - [**********            20%                       ]  103 of 503 completed
+[2024-12-15T00:34:50.962+0000] {logging_mixin.py:154} WARNING - [**********            21%                       ]  104 of 503 completed
+[2024-12-15T00:34:51.063+0000] {logging_mixin.py:154} WARNING - [**********            21%                       ]  105 of 503 completed
+[2024-12-15T00:34:52.276+0000] {logging_mixin.py:154} WARNING - [**********            21%                       ]  106 of 503 completed
+[2024-12-15T00:34:52.683+0000] {logging_mixin.py:154} WARNING - [**********            21%                       ]  107 of 503 completed
+[2024-12-15T00:34:52.732+0000] {logging_mixin.py:154} WARNING - [**********            21%                       ]  108 of 503 completed
+[2024-12-15T00:34:52.741+0000] {logging_mixin.py:154} WARNING - [***********           22%                       ]  109 of 503 completed
+[2024-12-15T00:34:52.748+0000] {logging_mixin.py:154} WARNING - [***********           22%                       ]  110 of 503 completed
+[2024-12-15T00:34:52.872+0000] {logging_mixin.py:154} WARNING - [***********           22%                       ]  111 of 503 completed
+[2024-12-15T00:34:52.878+0000] {logging_mixin.py:154} WARNING - [***********           22%                       ]  112 of 503 completed
+[2024-12-15T00:34:52.964+0000] {logging_mixin.py:154} WARNING - [***********           22%                       ]  113 of 503 completed
+[2024-12-15T00:34:52.973+0000] {logging_mixin.py:154} WARNING - [***********           23%                       ]  114 of 503 completed
+[2024-12-15T00:34:52.980+0000] {logging_mixin.py:154} WARNING - [***********           23%                       ]  115 of 503 completed
+[2024-12-15T00:34:53.668+0000] {logging_mixin.py:154} WARNING - [***********           23%                       ]  116 of 503 completed
+[2024-12-15T00:34:54.583+0000] {logging_mixin.py:154} WARNING - [***********           23%                       ]  117 of 503 completed
+[2024-12-15T00:34:54.586+0000] {logging_mixin.py:154} WARNING - [***********           23%                       ]  117 of 503 completed
+[2024-12-15T00:34:54.597+0000] {logging_mixin.py:154} WARNING - [************          24%                       ]  119 of 503 completed
+[2024-12-15T00:34:54.658+0000] {logging_mixin.py:154} WARNING - [************          24%                       ]  120 of 503 completed
+[2024-12-15T00:34:54.671+0000] {logging_mixin.py:154} WARNING - [************          24%                       ]  120 of 503 completed
+[2024-12-15T00:34:54.675+0000] {logging_mixin.py:154} WARNING - [************          24%                       ]  122 of 503 completed
+[2024-12-15T00:34:55.363+0000] {logging_mixin.py:154} WARNING - [************          24%                       ]  123 of 503 completed
+[2024-12-15T00:34:55.458+0000] {logging_mixin.py:154} WARNING - [************          25%                       ]  124 of 503 completed
+[2024-12-15T00:34:55.464+0000] {logging_mixin.py:154} WARNING - [************          25%                       ]  125 of 503 completed
+[2024-12-15T00:34:55.559+0000] {logging_mixin.py:154} WARNING - [************          25%                       ]  126 of 503 completed
+[2024-12-15T00:34:55.565+0000] {logging_mixin.py:154} WARNING - [************          25%                       ]  126 of 503 completed
+[2024-12-15T00:34:56.057+0000] {logging_mixin.py:154} WARNING - [************          25%                       ]  128 of 503 completed
+[2024-12-15T00:34:56.262+0000] {logging_mixin.py:154} WARNING - [************          26%                       ]  129 of 503 completed
+[2024-12-15T00:34:56.362+0000] {logging_mixin.py:154} WARNING - [************          26%                       ]  130 of 503 completed
+[2024-12-15T00:34:56.571+0000] {logging_mixin.py:154} WARNING - [************          26%                       ]  131 of 503 completed
+[2024-12-15T00:34:56.666+0000] {logging_mixin.py:154} WARNING - [************          26%                       ]  132 of 503 completed
+[2024-12-15T00:34:56.764+0000] {logging_mixin.py:154} WARNING - [************          26%                       ]  133 of 503 completed
+[2024-12-15T00:34:56.773+0000] {logging_mixin.py:154} WARNING - [************          26%                       ]  133 of 503 completed
+[2024-12-15T00:34:56.784+0000] {logging_mixin.py:154} WARNING - [*************         27%                       ]  135 of 503 completed
+[2024-12-15T00:34:57.175+0000] {logging_mixin.py:154} WARNING - [*************         27%                       ]  136 of 503 completed
+[2024-12-15T00:34:57.262+0000] {logging_mixin.py:154} WARNING - [*************         27%                       ]  137 of 503 completed
+[2024-12-15T00:34:57.659+0000] {logging_mixin.py:154} WARNING - [*************         27%                       ]  138 of 503 completed
+[2024-12-15T00:34:57.673+0000] {logging_mixin.py:154} WARNING - [*************         28%                       ]  139 of 503 completed
+[2024-12-15T00:34:57.676+0000] {logging_mixin.py:154} WARNING - [*************         28%                       ]  139 of 503 completed
+[2024-12-15T00:34:57.845+0000] {logging_mixin.py:154} WARNING - [*************         28%                       ]  141 of 503 completed
+[2024-12-15T00:34:57.963+0000] {logging_mixin.py:154} WARNING - [*************         28%                       ]  142 of 503 completed
+[2024-12-15T00:34:58.069+0000] {logging_mixin.py:154} WARNING - [*************         28%                       ]  143 of 503 completed
+[2024-12-15T00:34:58.072+0000] {logging_mixin.py:154} WARNING - [**************        29%                       ]  144 of 503 completed
+[2024-12-15T00:34:58.163+0000] {logging_mixin.py:154} WARNING - [**************        29%                       ]  145 of 503 completed
+[2024-12-15T00:34:58.885+0000] {logging_mixin.py:154} WARNING - [**************        29%                       ]  146 of 503 completed
+[2024-12-15T00:34:59.160+0000] {logging_mixin.py:154} WARNING - [**************        29%                       ]  147 of 503 completed
+[2024-12-15T00:34:59.465+0000] {logging_mixin.py:154} WARNING - [**************        29%                       ]  148 of 503 completed
+[2024-12-15T00:34:59.475+0000] {logging_mixin.py:154} WARNING - [**************        30%                       ]  149 of 503 completed
+[2024-12-15T00:34:59.574+0000] {logging_mixin.py:154} WARNING - [**************        30%                       ]  150 of 503 completed
+[2024-12-15T00:34:59.662+0000] {logging_mixin.py:154} WARNING - [**************        30%                       ]  151 of 503 completed
+[2024-12-15T00:34:59.763+0000] {logging_mixin.py:154} WARNING - [**************        30%                       ]  152 of 503 completed
+[2024-12-15T00:34:59.779+0000] {logging_mixin.py:154} WARNING - [**************        30%                       ]  153 of 503 completed
+[2024-12-15T00:34:59.785+0000] {logging_mixin.py:154} WARNING - [**************        30%                       ]  153 of 503 completed
+[2024-12-15T00:34:59.792+0000] {logging_mixin.py:154} WARNING - [***************       31%                       ]  155 of 503 completed
+[2024-12-15T00:35:00.372+0000] {logging_mixin.py:154} WARNING - [***************       31%                       ]  156 of 503 completed
+[2024-12-15T00:35:00.660+0000] {logging_mixin.py:154} WARNING - [***************       31%                       ]  157 of 503 completed
+[2024-12-15T00:35:00.761+0000] {logging_mixin.py:154} WARNING - [***************       31%                       ]  158 of 503 completed
+[2024-12-15T00:35:00.862+0000] {logging_mixin.py:154} WARNING - [***************       32%                       ]  159 of 503 completed
+[2024-12-15T00:35:01.262+0000] {logging_mixin.py:154} WARNING - [***************       32%                       ]  160 of 503 completed
+[2024-12-15T00:35:01.362+0000] {logging_mixin.py:154} WARNING - [***************       32%                       ]  161 of 503 completed
+[2024-12-15T00:35:01.463+0000] {logging_mixin.py:154} WARNING - [***************       32%                       ]  162 of 503 completed
+[2024-12-15T00:35:01.473+0000] {logging_mixin.py:154} WARNING - [***************       32%                       ]  163 of 503 completed
+[2024-12-15T00:35:01.480+0000] {logging_mixin.py:154} WARNING - [****************      33%                       ]  164 of 503 completed
+[2024-12-15T00:35:01.668+0000] {logging_mixin.py:154} WARNING - [****************      33%                       ]  165 of 503 completed
+[2024-12-15T00:35:01.683+0000] {logging_mixin.py:154} WARNING - [****************      33%                       ]  166 of 503 completed
+[2024-12-15T00:35:02.261+0000] {logging_mixin.py:154} WARNING - [****************      33%                       ]  167 of 503 completed
+[2024-12-15T00:35:02.362+0000] {logging_mixin.py:154} WARNING - [****************      33%                       ]  168 of 503 completed
+[2024-12-15T00:35:02.465+0000] {logging_mixin.py:154} WARNING - [****************      34%                       ]  169 of 503 completed
+[2024-12-15T00:35:02.668+0000] {logging_mixin.py:154} WARNING - [****************      34%                       ]  170 of 503 completed
+[2024-12-15T00:35:02.763+0000] {logging_mixin.py:154} WARNING - [****************      34%                       ]  171 of 503 completed
+[2024-12-15T00:35:03.105+0000] {logging_mixin.py:154} WARNING - [****************      34%                       ]  172 of 503 completed
+[2024-12-15T00:35:03.121+0000] {logging_mixin.py:154} WARNING - [****************      34%                       ]  173 of 503 completed
+[2024-12-15T00:35:03.122+0000] {logging_mixin.py:154} WARNING - [****************      34%                       ]  173 of 503 completed
+[2024-12-15T00:35:03.271+0000] {logging_mixin.py:154} WARNING - [*****************     35%                       ]  175 of 503 completed
+[2024-12-15T00:35:03.273+0000] {logging_mixin.py:154} WARNING - [*****************     35%                       ]  175 of 503 completed
+[2024-12-15T00:35:03.557+0000] {logging_mixin.py:154} WARNING - [*****************     35%                       ]  177 of 503 completed
+[2024-12-15T00:35:03.977+0000] {logging_mixin.py:154} WARNING - [*****************     35%                       ]  178 of 503 completed
+[2024-12-15T00:35:04.123+0000] {logging_mixin.py:154} WARNING - [*****************     36%                       ]  179 of 503 completed
+[2024-12-15T00:35:04.132+0000] {logging_mixin.py:154} WARNING - [*****************     36%                       ]  180 of 503 completed
+[2024-12-15T00:35:04.162+0000] {logging_mixin.py:154} WARNING - [*****************     36%                       ]  181 of 503 completed
+[2024-12-15T00:35:04.174+0000] {logging_mixin.py:154} WARNING - [*****************     36%                       ]  182 of 503 completed
+[2024-12-15T00:35:04.361+0000] {logging_mixin.py:154} WARNING - [*****************     36%                       ]  183 of 503 completed
+[2024-12-15T00:35:04.766+0000] {logging_mixin.py:154} WARNING - [******************    37%                       ]  184 of 503 completed
+[2024-12-15T00:35:04.873+0000] {logging_mixin.py:154} WARNING - [******************    37%                       ]  185 of 503 completed
+[2024-12-15T00:35:04.971+0000] {logging_mixin.py:154} WARNING - [******************    37%                       ]  186 of 503 completed
+[2024-12-15T00:35:05.385+0000] {logging_mixin.py:154} WARNING - [******************    37%                       ]  187 of 503 completed
+[2024-12-15T00:35:05.475+0000] {logging_mixin.py:154} WARNING - [******************    37%                       ]  188 of 503 completed
+[2024-12-15T00:35:05.656+0000] {logging_mixin.py:154} WARNING - [******************    38%                       ]  189 of 503 completed
+[2024-12-15T00:35:05.858+0000] {logging_mixin.py:154} WARNING - [******************    38%                       ]  190 of 503 completed
+[2024-12-15T00:35:05.865+0000] {logging_mixin.py:154} WARNING - [******************    38%                       ]  191 of 503 completed
+[2024-12-15T00:35:06.362+0000] {logging_mixin.py:154} WARNING - [******************    38%                       ]  192 of 503 completed
+[2024-12-15T00:35:06.663+0000] {logging_mixin.py:154} WARNING - [******************    38%                       ]  193 of 503 completed
+[2024-12-15T00:35:06.675+0000] {logging_mixin.py:154} WARNING - [*******************   39%                       ]  194 of 503 completed
+[2024-12-15T00:35:06.683+0000] {logging_mixin.py:154} WARNING - [*******************   39%                       ]  195 of 503 completed
+[2024-12-15T00:35:06.691+0000] {logging_mixin.py:154} WARNING - [*******************   39%                       ]  196 of 503 completed
+[2024-12-15T00:35:06.972+0000] {logging_mixin.py:154} WARNING - [*******************   39%                       ]  197 of 503 completed
+[2024-12-15T00:35:06.984+0000] {logging_mixin.py:154} WARNING - [*******************   39%                       ]  198 of 503 completed
+[2024-12-15T00:35:06.992+0000] {logging_mixin.py:154} WARNING - [*******************   40%                       ]  199 of 503 completed
+[2024-12-15T00:35:07.163+0000] {logging_mixin.py:154} WARNING - [*******************   40%                       ]  200 of 503 completed
+[2024-12-15T00:35:07.285+0000] {logging_mixin.py:154} WARNING - [*******************   40%                       ]  201 of 503 completed
+[2024-12-15T00:35:07.666+0000] {logging_mixin.py:154} WARNING - [*******************   40%                       ]  202 of 503 completed
+[2024-12-15T00:35:07.962+0000] {logging_mixin.py:154} WARNING - [*******************   40%                       ]  203 of 503 completed
+[2024-12-15T00:35:08.662+0000] {logging_mixin.py:154} WARNING - [********************  41%                       ]  204 of 503 completed
+[2024-12-15T00:35:08.767+0000] {logging_mixin.py:154} WARNING - [********************  41%                       ]  205 of 503 completed
+[2024-12-15T00:35:08.777+0000] {logging_mixin.py:154} WARNING - [********************  41%                       ]  205 of 503 completed
+[2024-12-15T00:35:08.866+0000] {logging_mixin.py:154} WARNING - [********************  41%                       ]  207 of 503 completed
+[2024-12-15T00:35:08.878+0000] {logging_mixin.py:154} WARNING - [********************  41%                       ]  208 of 503 completed
+[2024-12-15T00:35:08.891+0000] {logging_mixin.py:154} WARNING - [********************  42%                       ]  209 of 503 completed
+[2024-12-15T00:35:08.902+0000] {logging_mixin.py:154} WARNING - [********************  42%                       ]  210 of 503 completed
+[2024-12-15T00:35:08.904+0000] {logging_mixin.py:154} WARNING - [********************  42%                       ]  210 of 503 completed
+[2024-12-15T00:35:09.165+0000] {logging_mixin.py:154} WARNING - [********************  42%                       ]  212 of 503 completed
+[2024-12-15T00:35:09.662+0000] {logging_mixin.py:154} WARNING - [********************  42%                       ]  213 of 503 completed
+[2024-12-15T00:35:11.066+0000] {logging_mixin.py:154} WARNING - [********************* 43%                       ]  214 of 503 completed
+[2024-12-15T00:35:11.076+0000] {logging_mixin.py:154} WARNING - [********************* 43%                       ]  215 of 503 completed
+[2024-12-15T00:35:11.164+0000] {logging_mixin.py:154} WARNING - [********************* 43%                       ]  216 of 503 completed
+[2024-12-15T00:35:11.370+0000] {logging_mixin.py:154} WARNING - [********************* 43%                       ]  217 of 503 completed
+[2024-12-15T00:35:11.380+0000] {logging_mixin.py:154} WARNING - [********************* 43%                       ]  217 of 503 completed
+[2024-12-15T00:35:11.381+0000] {logging_mixin.py:154} WARNING - [********************* 43%                       ]  217 of 503 completed
+[2024-12-15T00:35:11.475+0000] {logging_mixin.py:154} WARNING - [********************* 44%                       ]  220 of 503 completed
+[2024-12-15T00:35:11.574+0000] {logging_mixin.py:154} WARNING - [********************* 44%                       ]  221 of 503 completed
+[2024-12-15T00:35:11.657+0000] {logging_mixin.py:154} WARNING - [********************* 44%                       ]  222 of 503 completed
+[2024-12-15T00:35:11.676+0000] {logging_mixin.py:154} WARNING - [********************* 44%                       ]  223 of 503 completed
+[2024-12-15T00:35:11.755+0000] {logging_mixin.py:154} WARNING - [**********************45%                       ]  224 of 503 completed
+[2024-12-15T00:35:11.968+0000] {logging_mixin.py:154} WARNING - [**********************45%                       ]  225 of 503 completed
+[2024-12-15T00:35:12.462+0000] {logging_mixin.py:154} WARNING - [**********************45%                       ]  226 of 503 completed
+[2024-12-15T00:35:12.657+0000] {logging_mixin.py:154} WARNING - [**********************45%                       ]  227 of 503 completed
+[2024-12-15T00:35:12.758+0000] {logging_mixin.py:154} WARNING - [**********************45%                       ]  228 of 503 completed
+[2024-12-15T00:35:13.070+0000] {logging_mixin.py:154} WARNING - [**********************46%                       ]  229 of 503 completed
+[2024-12-15T00:35:13.084+0000] {logging_mixin.py:154} WARNING - [**********************46%                       ]  230 of 503 completed
+[2024-12-15T00:35:13.095+0000] {logging_mixin.py:154} WARNING - [**********************46%                       ]  231 of 503 completed
+[2024-12-15T00:35:13.099+0000] {logging_mixin.py:154} WARNING - [**********************46%                       ]  232 of 503 completed
+[2024-12-15T00:35:13.470+0000] {logging_mixin.py:154} WARNING - [**********************46%                       ]  233 of 503 completed
+[2024-12-15T00:35:13.476+0000] {logging_mixin.py:154} WARNING - [**********************47%                       ]  234 of 503 completed
+[2024-12-15T00:35:13.962+0000] {logging_mixin.py:154} WARNING - [**********************47%                       ]  235 of 503 completed
+[2024-12-15T00:35:14.168+0000] {logging_mixin.py:154} WARNING - [**********************47%                       ]  236 of 503 completed
+[2024-12-15T00:35:14.266+0000] {logging_mixin.py:154} WARNING - [**********************47%                       ]  237 of 503 completed
+[2024-12-15T00:35:14.365+0000] {logging_mixin.py:154} WARNING - [**********************47%                       ]  238 of 503 completed
+[2024-12-15T00:35:14.375+0000] {logging_mixin.py:154} WARNING - [**********************48%                       ]  239 of 503 completed
+[2024-12-15T00:35:14.396+0000] {logging_mixin.py:154} WARNING - [**********************48%                       ]  240 of 503 completed
+[2024-12-15T00:35:14.405+0000] {logging_mixin.py:154} WARNING - [**********************48%                       ]  241 of 503 completed
+[2024-12-15T00:35:14.558+0000] {logging_mixin.py:154} WARNING - [**********************48%                       ]  242 of 503 completed
+[2024-12-15T00:35:14.663+0000] {logging_mixin.py:154} WARNING - [**********************48%                       ]  243 of 503 completed
+[2024-12-15T00:35:14.979+0000] {logging_mixin.py:154} WARNING - [**********************49%                       ]  244 of 503 completed
+[2024-12-15T00:35:15.066+0000] {logging_mixin.py:154} WARNING - [**********************49%                       ]  245 of 503 completed
+[2024-12-15T00:35:15.809+0000] {logging_mixin.py:154} WARNING - [**********************49%                       ]  246 of 503 completed
+[2024-12-15T00:35:16.674+0000] {logging_mixin.py:154} WARNING - [**********************49%                       ]  247 of 503 completed
+[2024-12-15T00:35:16.684+0000] {logging_mixin.py:154} WARNING - [**********************49%                       ]  247 of 503 completed
+[2024-12-15T00:35:16.960+0000] {logging_mixin.py:154} WARNING - [**********************50%                       ]  249 of 503 completed
+[2024-12-15T00:35:17.400+0000] {logging_mixin.py:154} WARNING - [**********************50%                       ]  250 of 503 completed
+[2024-12-15T00:35:17.420+0000] {logging_mixin.py:154} WARNING - [**********************50%                       ]  251 of 503 completed
+[2024-12-15T00:35:17.421+0000] {logging_mixin.py:154} WARNING - [**********************50%                       ]  251 of 503 completed
+[2024-12-15T00:35:17.427+0000] {logging_mixin.py:154} WARNING - [**********************50%                       ]  253 of 503 completed
+[2024-12-15T00:35:17.462+0000] {logging_mixin.py:154} WARNING - [**********************50%                       ]  254 of 503 completed
+[2024-12-15T00:35:17.470+0000] {logging_mixin.py:154} WARNING - [**********************50%                       ]  254 of 503 completed
+[2024-12-15T00:35:18.382+0000] {logging_mixin.py:154} WARNING - [**********************51%                       ]  256 of 503 completed
+[2024-12-15T00:35:18.561+0000] {logging_mixin.py:154} WARNING - [**********************51%                       ]  257 of 503 completed
+[2024-12-15T00:35:18.572+0000] {logging_mixin.py:154} WARNING - [**********************51%                       ]  258 of 503 completed
+[2024-12-15T00:35:18.579+0000] {logging_mixin.py:154} WARNING - [**********************51%                       ]  259 of 503 completed
+[2024-12-15T00:35:19.477+0000] {logging_mixin.py:154} WARNING - [**********************52%                       ]  260 of 503 completed
+[2024-12-15T00:35:19.489+0000] {logging_mixin.py:154} WARNING - [**********************52%                       ]  261 of 503 completed
+[2024-12-15T00:35:19.493+0000] {logging_mixin.py:154} WARNING - [**********************52%                       ]  261 of 503 completed
+[2024-12-15T00:35:19.496+0000] {logging_mixin.py:154} WARNING - [**********************52%                       ]  263 of 503 completed
+[2024-12-15T00:35:19.499+0000] {logging_mixin.py:154} WARNING - [**********************52%                       ]  263 of 503 completed
+[2024-12-15T00:35:19.507+0000] {logging_mixin.py:154} WARNING - [**********************53%                       ]  265 of 503 completed
+[2024-12-15T00:35:19.765+0000] {logging_mixin.py:154} WARNING - [**********************53%                       ]  266 of 503 completed
+[2024-12-15T00:35:20.068+0000] {logging_mixin.py:154} WARNING - [**********************53%                       ]  267 of 503 completed
+[2024-12-15T00:35:20.665+0000] {logging_mixin.py:154} WARNING - [**********************53%                       ]  268 of 503 completed
+[2024-12-15T00:35:20.763+0000] {logging_mixin.py:154} WARNING - [**********************53%                       ]  269 of 503 completed
+[2024-12-15T00:35:20.782+0000] {logging_mixin.py:154} WARNING - [**********************54%*                      ]  270 of 503 completed
+[2024-12-15T00:35:20.792+0000] {logging_mixin.py:154} WARNING - [**********************54%*                      ]  271 of 503 completed
+[2024-12-15T00:35:20.794+0000] {logging_mixin.py:154} WARNING - [**********************54%*                      ]  272 of 503 completed
+[2024-12-15T00:35:20.802+0000] {logging_mixin.py:154} WARNING - [**********************54%*                      ]  273 of 503 completed
+[2024-12-15T00:35:20.965+0000] {logging_mixin.py:154} WARNING - [**********************54%*                      ]  274 of 503 completed
+[2024-12-15T00:35:20.974+0000] {logging_mixin.py:154} WARNING - [**********************55%*                      ]  275 of 503 completed
+[2024-12-15T00:35:21.270+0000] {logging_mixin.py:154} WARNING - [**********************55%*                      ]  276 of 503 completed
+[2024-12-15T00:35:21.461+0000] {logging_mixin.py:154} WARNING - [**********************55%*                      ]  277 of 503 completed
+[2024-12-15T00:35:22.178+0000] {logging_mixin.py:154} WARNING - [**********************55%*                      ]  278 of 503 completed
+[2024-12-15T00:35:23.776+0000] {logging_mixin.py:154} WARNING - [**********************55%*                      ]  279 of 503 completed
+[2024-12-15T00:35:23.778+0000] {logging_mixin.py:154} WARNING - [**********************55%*                      ]  279 of 503 completed
+[2024-12-15T00:35:23.886+0000] {logging_mixin.py:154} WARNING - [**********************56%**                     ]  281 of 503 completed
+[2024-12-15T00:35:23.887+0000] {logging_mixin.py:154} WARNING - [**********************56%**                     ]  281 of 503 completed
+[2024-12-15T00:35:23.890+0000] {logging_mixin.py:154} WARNING - [**********************56%**                     ]  283 of 503 completed
+[2024-12-15T00:35:23.894+0000] {logging_mixin.py:154} WARNING - [**********************56%**                     ]  284 of 503 completed
+[2024-12-15T00:35:23.962+0000] {logging_mixin.py:154} WARNING - [**********************57%**                     ]  285 of 503 completed
+[2024-12-15T00:35:23.978+0000] {logging_mixin.py:154} WARNING - [**********************57%**                     ]  286 of 503 completed
+[2024-12-15T00:35:23.980+0000] {logging_mixin.py:154} WARNING - [**********************57%**                     ]  286 of 503 completed
+[2024-12-15T00:35:23.988+0000] {logging_mixin.py:154} WARNING - [**********************57%**                     ]  288 of 503 completed
+[2024-12-15T00:35:24.494+0000] {logging_mixin.py:154} WARNING - [**********************57%**                     ]  289 of 503 completed
+[2024-12-15T00:35:24.496+0000] {logging_mixin.py:154} WARNING - [**********************57%**                     ]  289 of 503 completed
+[2024-12-15T00:35:25.363+0000] {logging_mixin.py:154} WARNING - [**********************58%***                    ]  291 of 503 completed
+[2024-12-15T00:35:25.378+0000] {logging_mixin.py:154} WARNING - [**********************58%***                    ]  292 of 503 completed
+[2024-12-15T00:35:25.389+0000] {logging_mixin.py:154} WARNING - [**********************58%***                    ]  293 of 503 completed
+[2024-12-15T00:35:25.399+0000] {logging_mixin.py:154} WARNING - [**********************58%***                    ]  294 of 503 completed
+[2024-12-15T00:35:25.414+0000] {logging_mixin.py:154} WARNING - [**********************59%***                    ]  295 of 503 completed
+[2024-12-15T00:35:25.415+0000] {logging_mixin.py:154} WARNING - [**********************59%***                    ]  295 of 503 completed
+[2024-12-15T00:35:25.661+0000] {logging_mixin.py:154} WARNING - [**********************59%***                    ]  297 of 503 completed
+[2024-12-15T00:35:25.870+0000] {logging_mixin.py:154} WARNING - [**********************59%***                    ]  298 of 503 completed
+[2024-12-15T00:35:26.365+0000] {logging_mixin.py:154} WARNING - [**********************59%***                    ]  299 of 503 completed
+[2024-12-15T00:35:26.373+0000] {logging_mixin.py:154} WARNING - [**********************60%****                   ]  300 of 503 completed
+[2024-12-15T00:35:26.376+0000] {logging_mixin.py:154} WARNING - [**********************60%****                   ]  300 of 503 completed
+[2024-12-15T00:35:26.473+0000] {logging_mixin.py:154} WARNING - [**********************60%****                   ]  302 of 503 completed
+[2024-12-15T00:35:26.485+0000] {logging_mixin.py:154} WARNING - [**********************60%****                   ]  303 of 503 completed
+[2024-12-15T00:35:26.863+0000] {logging_mixin.py:154} WARNING - [**********************60%****                   ]  304 of 503 completed
+[2024-12-15T00:35:27.459+0000] {logging_mixin.py:154} WARNING - [**********************61%****                   ]  305 of 503 completed
+[2024-12-15T00:35:27.471+0000] {logging_mixin.py:154} WARNING - [**********************61%****                   ]  306 of 503 completed
+[2024-12-15T00:35:27.478+0000] {logging_mixin.py:154} WARNING - [**********************61%****                   ]  307 of 503 completed
+[2024-12-15T00:35:27.557+0000] {logging_mixin.py:154} WARNING - [**********************61%****                   ]  308 of 503 completed
+[2024-12-15T00:35:28.066+0000] {logging_mixin.py:154} WARNING - [**********************61%****                   ]  309 of 503 completed
+[2024-12-15T00:35:28.170+0000] {logging_mixin.py:154} WARNING - [**********************62%*****                  ]  310 of 503 completed
+[2024-12-15T00:35:28.171+0000] {logging_mixin.py:154} WARNING - [**********************62%*****                  ]  310 of 503 completed
+[2024-12-15T00:35:28.371+0000] {logging_mixin.py:154} WARNING - [**********************62%*****                  ]  312 of 503 completed
+[2024-12-15T00:35:28.383+0000] {logging_mixin.py:154} WARNING - [**********************62%*****                  ]  313 of 503 completed
+[2024-12-15T00:35:28.393+0000] {logging_mixin.py:154} WARNING - [**********************62%*****                  ]  314 of 503 completed
+[2024-12-15T00:35:29.067+0000] {logging_mixin.py:154} WARNING - [**********************63%*****                  ]  315 of 503 completed
+[2024-12-15T00:35:29.076+0000] {logging_mixin.py:154} WARNING - [**********************63%*****                  ]  316 of 503 completed
+[2024-12-15T00:35:29.082+0000] {logging_mixin.py:154} WARNING - [**********************63%*****                  ]  316 of 503 completed
+[2024-12-15T00:35:29.241+0000] {logging_mixin.py:154} WARNING - [**********************63%*****                  ]  318 of 503 completed
+[2024-12-15T00:35:29.560+0000] {logging_mixin.py:154} WARNING - [**********************63%*****                  ]  319 of 503 completed
+[2024-12-15T00:35:29.567+0000] {logging_mixin.py:154} WARNING - [**********************64%******                 ]  320 of 503 completed
+[2024-12-15T00:35:29.762+0000] {logging_mixin.py:154} WARNING - [**********************64%******                 ]  321 of 503 completed
+[2024-12-15T00:35:29.771+0000] {logging_mixin.py:154} WARNING - [**********************64%******                 ]  322 of 503 completed
+[2024-12-15T00:35:29.883+0000] {logging_mixin.py:154} WARNING - [**********************64%******                 ]  323 of 503 completed
+[2024-12-15T00:35:29.887+0000] {logging_mixin.py:154} WARNING - [**********************64%******                 ]  323 of 503 completed
+[2024-12-15T00:35:30.262+0000] {logging_mixin.py:154} WARNING - [**********************65%******                 ]  325 of 503 completed
+[2024-12-15T00:35:30.373+0000] {logging_mixin.py:154} WARNING - [**********************65%******                 ]  326 of 503 completed
+[2024-12-15T00:35:30.384+0000] {logging_mixin.py:154} WARNING - [**********************65%******                 ]  327 of 503 completed
+[2024-12-15T00:35:30.471+0000] {logging_mixin.py:154} WARNING - [**********************65%******                 ]  328 of 503 completed
+[2024-12-15T00:35:30.878+0000] {logging_mixin.py:154} WARNING - [**********************65%******                 ]  329 of 503 completed
+[2024-12-15T00:35:30.891+0000] {logging_mixin.py:154} WARNING - [**********************66%*******                ]  330 of 503 completed
+[2024-12-15T00:35:30.981+0000] {logging_mixin.py:154} WARNING - [**********************66%*******                ]  331 of 503 completed
+[2024-12-15T00:35:31.078+0000] {logging_mixin.py:154} WARNING - [**********************66%*******                ]  332 of 503 completed
+[2024-12-15T00:35:31.085+0000] {logging_mixin.py:154} WARNING - [**********************66%*******                ]  332 of 503 completed
+[2024-12-15T00:35:31.162+0000] {logging_mixin.py:154} WARNING - [**********************66%*******                ]  334 of 503 completed
+[2024-12-15T00:35:31.467+0000] {logging_mixin.py:154} WARNING - [**********************67%*******                ]  335 of 503 completed
+[2024-12-15T00:35:31.965+0000] {logging_mixin.py:154} WARNING - [**********************67%*******                ]  336 of 503 completed
+[2024-12-15T00:35:32.158+0000] {logging_mixin.py:154} WARNING - [**********************67%*******                ]  337 of 503 completed
+[2024-12-15T00:35:32.263+0000] {logging_mixin.py:154} WARNING - [**********************67%*******                ]  338 of 503 completed
+[2024-12-15T00:35:32.381+0000] {logging_mixin.py:154} WARNING - [**********************67%*******                ]  339 of 503 completed
+[2024-12-15T00:35:32.391+0000] {logging_mixin.py:154} WARNING - [**********************68%********               ]  340 of 503 completed
+[2024-12-15T00:35:32.400+0000] {logging_mixin.py:154} WARNING - [**********************68%********               ]  341 of 503 completed
+[2024-12-15T00:35:32.459+0000] {logging_mixin.py:154} WARNING - [**********************68%********               ]  342 of 503 completed
+[2024-12-15T00:35:32.569+0000] {logging_mixin.py:154} WARNING - [**********************68%********               ]  343 of 503 completed
+[2024-12-15T00:35:32.698+0000] {logging_mixin.py:154} WARNING - [**********************68%********               ]  344 of 503 completed
+[2024-12-15T00:35:33.288+0000] {logging_mixin.py:154} WARNING - [**********************69%********               ]  345 of 503 completed
+[2024-12-15T00:35:33.296+0000] {logging_mixin.py:154} WARNING - [**********************69%********               ]  345 of 503 completed
+[2024-12-15T00:35:33.666+0000] {logging_mixin.py:154} WARNING - [**********************69%********               ]  347 of 503 completed
+[2024-12-15T00:35:33.870+0000] {logging_mixin.py:154} WARNING - [**********************69%********               ]  348 of 503 completed
+[2024-12-15T00:35:34.267+0000] {logging_mixin.py:154} WARNING - [**********************69%********               ]  349 of 503 completed
+[2024-12-15T00:35:34.285+0000] {logging_mixin.py:154} WARNING - [**********************70%*********              ]  350 of 503 completed
+[2024-12-15T00:35:34.290+0000] {logging_mixin.py:154} WARNING - [**********************70%*********              ]  351 of 503 completed
+[2024-12-15T00:35:34.379+0000] {logging_mixin.py:154} WARNING - [**********************70%*********              ]  352 of 503 completed
+[2024-12-15T00:35:34.399+0000] {logging_mixin.py:154} WARNING - [**********************70%*********              ]  353 of 503 completed
+[2024-12-15T00:35:34.401+0000] {logging_mixin.py:154} WARNING - [**********************70%*********              ]  354 of 503 completed
+[2024-12-15T00:35:34.766+0000] {logging_mixin.py:154} WARNING - [**********************71%*********              ]  355 of 503 completed
+[2024-12-15T00:35:34.774+0000] {logging_mixin.py:154} WARNING - [**********************71%*********              ]  356 of 503 completed
+[2024-12-15T00:35:35.264+0000] {logging_mixin.py:154} WARNING - [**********************71%*********              ]  357 of 503 completed
+[2024-12-15T00:35:35.354+0000] {logging_mixin.py:154} WARNING - [**********************71%*********              ]  358 of 503 completed
+[2024-12-15T00:35:35.562+0000] {logging_mixin.py:154} WARNING - [**********************71%*********              ]  359 of 503 completed
+[2024-12-15T00:35:36.162+0000] {logging_mixin.py:154} WARNING - [**********************72%**********             ]  360 of 503 completed
+[2024-12-15T00:35:36.263+0000] {logging_mixin.py:154} WARNING - [**********************72%**********             ]  361 of 503 completed
+[2024-12-15T00:35:36.272+0000] {logging_mixin.py:154} WARNING - [**********************72%**********             ]  362 of 503 completed
+[2024-12-15T00:35:36.282+0000] {logging_mixin.py:154} WARNING - [**********************72%**********             ]  363 of 503 completed
+[2024-12-15T00:35:36.358+0000] {logging_mixin.py:154} WARNING - [**********************72%**********             ]  364 of 503 completed
+[2024-12-15T00:35:36.460+0000] {logging_mixin.py:154} WARNING - [**********************73%**********             ]  365 of 503 completed
+[2024-12-15T00:35:36.557+0000] {logging_mixin.py:154} WARNING - [**********************73%**********             ]  366 of 503 completed
+[2024-12-15T00:35:36.661+0000] {logging_mixin.py:154} WARNING - [**********************73%**********             ]  367 of 503 completed
+[2024-12-15T00:35:36.864+0000] {logging_mixin.py:154} WARNING - [**********************73%**********             ]  368 of 503 completed
+[2024-12-15T00:35:37.074+0000] {logging_mixin.py:154} WARNING - [**********************73%**********             ]  369 of 503 completed
+[2024-12-15T00:35:37.082+0000] {logging_mixin.py:154} WARNING - [**********************74%***********            ]  370 of 503 completed
+[2024-12-15T00:35:37.590+0000] {logging_mixin.py:154} WARNING - [**********************74%***********            ]  371 of 503 completed
+[2024-12-15T00:35:37.664+0000] {logging_mixin.py:154} WARNING - [**********************74%***********            ]  372 of 503 completed
+[2024-12-15T00:35:37.760+0000] {logging_mixin.py:154} WARNING - [**********************74%***********            ]  373 of 503 completed
+[2024-12-15T00:35:37.770+0000] {logging_mixin.py:154} WARNING - [**********************74%***********            ]  374 of 503 completed
+[2024-12-15T00:35:37.964+0000] {logging_mixin.py:154} WARNING - [**********************75%***********            ]  375 of 503 completed
+[2024-12-15T00:35:37.975+0000] {logging_mixin.py:154} WARNING - [**********************75%***********            ]  376 of 503 completed
+[2024-12-15T00:35:38.262+0000] {logging_mixin.py:154} WARNING - [**********************75%***********            ]  377 of 503 completed
+[2024-12-15T00:35:38.368+0000] {logging_mixin.py:154} WARNING - [**********************75%***********            ]  378 of 503 completed
+[2024-12-15T00:35:38.372+0000] {logging_mixin.py:154} WARNING - [**********************75%***********            ]  378 of 503 completed
+[2024-12-15T00:35:38.567+0000] {logging_mixin.py:154} WARNING - [**********************76%***********            ]  380 of 503 completed
+[2024-12-15T00:35:38.978+0000] {logging_mixin.py:154} WARNING - [**********************76%***********            ]  381 of 503 completed
+[2024-12-15T00:35:39.378+0000] {logging_mixin.py:154} WARNING - [**********************76%***********            ]  382 of 503 completed
+[2024-12-15T00:35:39.562+0000] {logging_mixin.py:154} WARNING - [**********************76%***********            ]  383 of 503 completed
+[2024-12-15T00:35:39.866+0000] {logging_mixin.py:154} WARNING - [**********************76%***********            ]  384 of 503 completed
+[2024-12-15T00:35:40.104+0000] {logging_mixin.py:154} WARNING - [**********************77%************           ]  385 of 503 completed
+[2024-12-15T00:35:40.119+0000] {logging_mixin.py:154} WARNING - [**********************77%************           ]  386 of 503 completed
+[2024-12-15T00:35:40.122+0000] {logging_mixin.py:154} WARNING - [**********************77%************           ]  387 of 503 completed
+[2024-12-15T00:35:40.145+0000] {logging_mixin.py:154} WARNING - [**********************77%************           ]  388 of 503 completed
+[2024-12-15T00:35:40.148+0000] {logging_mixin.py:154} WARNING - [**********************77%************           ]  388 of 503 completed
+[2024-12-15T00:35:40.162+0000] {logging_mixin.py:154} WARNING - [**********************78%************           ]  390 of 503 completed
+[2024-12-15T00:35:40.262+0000] {logging_mixin.py:154} WARNING - [**********************78%************           ]  391 of 503 completed
+[2024-12-15T00:35:40.969+0000] {logging_mixin.py:154} WARNING - [**********************78%************           ]  392 of 503 completed
+[2024-12-15T00:35:40.977+0000] {logging_mixin.py:154} WARNING - [**********************78%************           ]  393 of 503 completed
+[2024-12-15T00:35:41.256+0000] {logging_mixin.py:154} WARNING - [**********************78%************           ]  394 of 503 completed
+[2024-12-15T00:35:41.993+0000] {logging_mixin.py:154} WARNING - [**********************79%*************          ]  395 of 503 completed
+[2024-12-15T00:35:42.265+0000] {logging_mixin.py:154} WARNING - [**********************79%*************          ]  396 of 503 completed
+[2024-12-15T00:35:42.363+0000] {logging_mixin.py:154} WARNING - [**********************79%*************          ]  397 of 503 completed
+[2024-12-15T00:35:42.382+0000] {logging_mixin.py:154} WARNING - [**********************79%*************          ]  398 of 503 completed
+[2024-12-15T00:35:42.388+0000] {logging_mixin.py:154} WARNING - [**********************79%*************          ]  398 of 503 completed
+[2024-12-15T00:35:42.401+0000] {logging_mixin.py:154} WARNING - [**********************80%*************          ]  400 of 503 completed
+[2024-12-15T00:35:42.404+0000] {logging_mixin.py:154} WARNING - [**********************80%*************          ]  401 of 503 completed
+[2024-12-15T00:35:42.664+0000] {logging_mixin.py:154} WARNING - [**********************80%*************          ]  402 of 503 completed
+[2024-12-15T00:35:42.674+0000] {logging_mixin.py:154} WARNING - [**********************80%*************          ]  403 of 503 completed
+[2024-12-15T00:35:42.969+0000] {logging_mixin.py:154} WARNING - [**********************80%*************          ]  404 of 503 completed
+[2024-12-15T00:35:43.481+0000] {logging_mixin.py:154} WARNING - [**********************81%**************         ]  405 of 503 completed
+[2024-12-15T00:35:43.860+0000] {logging_mixin.py:154} WARNING - [**********************81%**************         ]  406 of 503 completed
+[2024-12-15T00:35:44.570+0000] {logging_mixin.py:154} WARNING - [**********************81%**************         ]  407 of 503 completed
+[2024-12-15T00:35:44.583+0000] {logging_mixin.py:154} WARNING - [**********************81%**************         ]  408 of 503 completed
+[2024-12-15T00:35:44.590+0000] {logging_mixin.py:154} WARNING - [**********************81%**************         ]  409 of 503 completed
+[2024-12-15T00:35:44.669+0000] {logging_mixin.py:154} WARNING - [**********************82%**************         ]  410 of 503 completed
+[2024-12-15T00:35:44.692+0000] {logging_mixin.py:154} WARNING - [**********************82%**************         ]  411 of 503 completed
+[2024-12-15T00:35:44.695+0000] {logging_mixin.py:154} WARNING - [**********************82%**************         ]  411 of 503 completed
+[2024-12-15T00:35:44.700+0000] {logging_mixin.py:154} WARNING - [**********************82%**************         ]  413 of 503 completed
+[2024-12-15T00:35:44.709+0000] {logging_mixin.py:154} WARNING - [**********************82%**************         ]  414 of 503 completed
+[2024-12-15T00:35:44.966+0000] {logging_mixin.py:154} WARNING - [**********************83%***************        ]  415 of 503 completed
+[2024-12-15T00:35:45.370+0000] {logging_mixin.py:154} WARNING - [**********************83%***************        ]  416 of 503 completed
+[2024-12-15T00:35:46.065+0000] {logging_mixin.py:154} WARNING - [**********************83%***************        ]  417 of 503 completed
+[2024-12-15T00:35:46.204+0000] {logging_mixin.py:154} WARNING - [**********************83%***************        ]  418 of 503 completed
+[2024-12-15T00:35:46.262+0000] {logging_mixin.py:154} WARNING - [**********************83%***************        ]  419 of 503 completed
+[2024-12-15T00:35:46.271+0000] {logging_mixin.py:154} WARNING - [**********************83%***************        ]  420 of 503 completed
+[2024-12-15T00:35:46.296+0000] {logging_mixin.py:154} WARNING - [**********************84%***************        ]  421 of 503 completed
+[2024-12-15T00:35:46.361+0000] {logging_mixin.py:154} WARNING - [**********************84%***************        ]  422 of 503 completed
+[2024-12-15T00:35:46.368+0000] {logging_mixin.py:154} WARNING - [**********************84%***************        ]  423 of 503 completed
+[2024-12-15T00:35:46.459+0000] {logging_mixin.py:154} WARNING - [**********************84%***************        ]  424 of 503 completed
+[2024-12-15T00:35:46.467+0000] {logging_mixin.py:154} WARNING - [**********************84%***************        ]  425 of 503 completed
+[2024-12-15T00:35:46.966+0000] {logging_mixin.py:154} WARNING - [**********************85%****************       ]  426 of 503 completed
+[2024-12-15T00:35:47.364+0000] {logging_mixin.py:154} WARNING - [**********************85%****************       ]  427 of 503 completed
+[2024-12-15T00:35:47.470+0000] {logging_mixin.py:154} WARNING - [**********************85%****************       ]  428 of 503 completed
+[2024-12-15T00:35:48.265+0000] {logging_mixin.py:154} WARNING - [**********************85%****************       ]  429 of 503 completed
+[2024-12-15T00:35:48.317+0000] {logging_mixin.py:154} WARNING - [**********************85%****************       ]  430 of 503 completed
+[2024-12-15T00:35:48.350+0000] {logging_mixin.py:154} WARNING - [**********************86%****************       ]  431 of 503 completed
+[2024-12-15T00:35:48.353+0000] {logging_mixin.py:154} WARNING - [**********************86%****************       ]  431 of 503 completed
+[2024-12-15T00:35:48.356+0000] {logging_mixin.py:154} WARNING - [**********************86%****************       ]  433 of 503 completed
+[2024-12-15T00:35:48.358+0000] {logging_mixin.py:154} WARNING - [**********************86%****************       ]  433 of 503 completed
+[2024-12-15T00:35:48.370+0000] {logging_mixin.py:154} WARNING - [**********************86%****************       ]  435 of 503 completed
+[2024-12-15T00:35:48.564+0000] {logging_mixin.py:154} WARNING - [**********************87%*****************      ]  436 of 503 completed
+[2024-12-15T00:35:48.986+0000] {logging_mixin.py:154} WARNING - [**********************87%*****************      ]  437 of 503 completed
+[2024-12-15T00:35:48.992+0000] {logging_mixin.py:154} WARNING - [**********************87%*****************      ]  438 of 503 completed
+[2024-12-15T00:35:49.464+0000] {logging_mixin.py:154} WARNING - [**********************87%*****************      ]  439 of 503 completed
+[2024-12-15T00:35:49.669+0000] {logging_mixin.py:154} WARNING - [**********************87%*****************      ]  440 of 503 completed
+[2024-12-15T00:35:49.772+0000] {logging_mixin.py:154} WARNING - [**********************88%*****************      ]  441 of 503 completed
+[2024-12-15T00:35:49.780+0000] {logging_mixin.py:154} WARNING - [**********************88%*****************      ]  442 of 503 completed
+[2024-12-15T00:35:49.872+0000] {logging_mixin.py:154} WARNING - [**********************88%*****************      ]  443 of 503 completed
+[2024-12-15T00:35:50.079+0000] {logging_mixin.py:154} WARNING - [**********************88%*****************      ]  444 of 503 completed
+[2024-12-15T00:35:50.088+0000] {logging_mixin.py:154} WARNING - [**********************88%*****************      ]  445 of 503 completed
+[2024-12-15T00:35:50.161+0000] {logging_mixin.py:154} WARNING - [**********************89%******************     ]  446 of 503 completed
+[2024-12-15T00:35:50.360+0000] {logging_mixin.py:154} WARNING - [**********************89%******************     ]  447 of 503 completed
+[2024-12-15T00:35:50.467+0000] {logging_mixin.py:154} WARNING - [**********************89%******************     ]  448 of 503 completed
+[2024-12-15T00:35:50.773+0000] {logging_mixin.py:154} WARNING - [**********************89%******************     ]  449 of 503 completed
+[2024-12-15T00:35:51.173+0000] {logging_mixin.py:154} WARNING - [**********************89%******************     ]  450 of 503 completed
+[2024-12-15T00:35:51.186+0000] {logging_mixin.py:154} WARNING - [**********************90%******************     ]  451 of 503 completed
+[2024-12-15T00:35:51.191+0000] {logging_mixin.py:154} WARNING - [**********************90%******************     ]  452 of 503 completed
+[2024-12-15T00:35:51.473+0000] {logging_mixin.py:154} WARNING - [**********************90%******************     ]  453 of 503 completed
+[2024-12-15T00:35:51.673+0000] {logging_mixin.py:154} WARNING - [**********************90%******************     ]  454 of 503 completed
+[2024-12-15T00:35:51.773+0000] {logging_mixin.py:154} WARNING - [**********************90%******************     ]  455 of 503 completed
+[2024-12-15T00:35:52.180+0000] {logging_mixin.py:154} WARNING - [**********************91%*******************    ]  456 of 503 completed
+[2024-12-15T00:35:52.566+0000] {logging_mixin.py:154} WARNING - [**********************91%*******************    ]  457 of 503 completed
+[2024-12-15T00:35:52.575+0000] {logging_mixin.py:154} WARNING - [**********************91%*******************    ]  458 of 503 completed
+[2024-12-15T00:35:52.583+0000] {logging_mixin.py:154} WARNING - [**********************91%*******************    ]  459 of 503 completed
+[2024-12-15T00:35:52.961+0000] {logging_mixin.py:154} WARNING - [**********************91%*******************    ]  460 of 503 completed
+[2024-12-15T00:35:52.969+0000] {logging_mixin.py:154} WARNING - [**********************92%*******************    ]  461 of 503 completed
+[2024-12-15T00:35:53.066+0000] {logging_mixin.py:154} WARNING - [**********************92%*******************    ]  462 of 503 completed
+[2024-12-15T00:35:53.270+0000] {logging_mixin.py:154} WARNING - [**********************92%*******************    ]  463 of 503 completed
+[2024-12-15T00:35:53.279+0000] {logging_mixin.py:154} WARNING - [**********************92%*******************    ]  464 of 503 completed
+[2024-12-15T00:35:53.465+0000] {logging_mixin.py:154} WARNING - [**********************92%*******************    ]  465 of 503 completed
+[2024-12-15T00:35:53.560+0000] {logging_mixin.py:154} WARNING - [**********************93%********************   ]  466 of 503 completed
+[2024-12-15T00:35:54.078+0000] {logging_mixin.py:154} WARNING - [**********************93%********************   ]  467 of 503 completed
+[2024-12-15T00:35:54.172+0000] {logging_mixin.py:154} WARNING - [**********************93%********************   ]  468 of 503 completed
+[2024-12-15T00:35:54.183+0000] {logging_mixin.py:154} WARNING - [**********************93%********************   ]  468 of 503 completed
+[2024-12-15T00:35:54.289+0000] {logging_mixin.py:154} WARNING - [**********************93%********************   ]  470 of 503 completed
+[2024-12-15T00:35:54.361+0000] {logging_mixin.py:154} WARNING - [**********************94%********************   ]  471 of 503 completed
+[2024-12-15T00:35:54.370+0000] {logging_mixin.py:154} WARNING - [**********************94%********************   ]  472 of 503 completed
+[2024-12-15T00:35:55.283+0000] {logging_mixin.py:154} WARNING - [**********************94%********************   ]  473 of 503 completed
+[2024-12-15T00:35:55.285+0000] {logging_mixin.py:154} WARNING - [**********************94%********************   ]  473 of 503 completed
+[2024-12-15T00:35:55.294+0000] {logging_mixin.py:154} WARNING - [**********************94%********************   ]  475 of 503 completed
+[2024-12-15T00:35:55.299+0000] {logging_mixin.py:154} WARNING - [**********************95%*********************  ]  476 of 503 completed
+[2024-12-15T00:35:55.663+0000] {logging_mixin.py:154} WARNING - [**********************95%*********************  ]  477 of 503 completed
+[2024-12-15T00:35:55.867+0000] {logging_mixin.py:154} WARNING - [**********************95%*********************  ]  478 of 503 completed
+[2024-12-15T00:35:55.970+0000] {logging_mixin.py:154} WARNING - [**********************95%*********************  ]  479 of 503 completed
+[2024-12-15T00:35:56.173+0000] {logging_mixin.py:154} WARNING - [**********************95%*********************  ]  480 of 503 completed
+[2024-12-15T00:35:56.181+0000] {logging_mixin.py:154} WARNING - [**********************95%*********************  ]  480 of 503 completed
+[2024-12-15T00:35:56.187+0000] {logging_mixin.py:154} WARNING - [**********************95%*********************  ]  480 of 503 completed
+[2024-12-15T00:35:56.459+0000] {logging_mixin.py:154} WARNING - [**********************96%*********************  ]  483 of 503 completed
+[2024-12-15T00:35:56.469+0000] {logging_mixin.py:154} WARNING - [**********************96%*********************  ]  484 of 503 completed
+[2024-12-15T00:35:56.586+0000] {logging_mixin.py:154} WARNING - [**********************96%*********************  ]  485 of 503 completed
+[2024-12-15T00:35:56.689+0000] {logging_mixin.py:154} WARNING - [**********************97%********************** ]  486 of 503 completed
+[2024-12-15T00:35:57.066+0000] {logging_mixin.py:154} WARNING - [**********************97%********************** ]  487 of 503 completed
+[2024-12-15T00:35:57.074+0000] {logging_mixin.py:154} WARNING - [**********************97%********************** ]  488 of 503 completed
+[2024-12-15T00:35:57.259+0000] {logging_mixin.py:154} WARNING - [**********************97%********************** ]  489 of 503 completed
+[2024-12-15T00:35:57.367+0000] {logging_mixin.py:154} WARNING - [**********************97%********************** ]  490 of 503 completed
+[2024-12-15T00:35:57.963+0000] {logging_mixin.py:154} WARNING - [**********************98%********************** ]  491 of 503 completed
+[2024-12-15T00:35:58.062+0000] {logging_mixin.py:154} WARNING - [**********************98%********************** ]  492 of 503 completed
+[2024-12-15T00:35:58.166+0000] {logging_mixin.py:154} WARNING - [**********************98%********************** ]  493 of 503 completed
+[2024-12-15T00:35:58.172+0000] {logging_mixin.py:154} WARNING - [**********************98%********************** ]  494 of 503 completed
+[2024-12-15T00:35:58.565+0000] {logging_mixin.py:154} WARNING - [**********************98%********************** ]  495 of 503 completed
+[2024-12-15T00:35:58.581+0000] {logging_mixin.py:154} WARNING - [**********************99%***********************]  496 of 503 completed
+[2024-12-15T00:35:58.593+0000] {logging_mixin.py:154} WARNING - [**********************99%***********************]  496 of 503 completed
+[2024-12-15T00:35:58.595+0000] {logging_mixin.py:154} WARNING - [**********************99%***********************]  498 of 503 completed
+[2024-12-15T00:35:58.666+0000] {logging_mixin.py:154} WARNING - [**********************99%***********************]  499 of 503 completed
+[2024-12-15T00:35:59.161+0000] {logging_mixin.py:154} WARNING - [**********************99%***********************]  500 of 503 completed
+[2024-12-15T00:35:59.259+0000] {logging_mixin.py:154} WARNING - [*********************100%***********************]  501 of 503 completed
+[2024-12-15T00:35:59.555+0000] {logging_mixin.py:154} WARNING - [*********************100%***********************]  502 of 503 completed
+[2024-12-15T00:35:59.556+0000] {logging_mixin.py:154} WARNING - [*********************100%***********************]  503 of 503 completed
+[2024-12-15T00:35:59.737+0000] {logging_mixin.py:154} INFO - number of negative adj close records: 0
+[2024-12-15T00:36:01.403+0000] {logging_mixin.py:154} INFO - Inserted 12425 rows out of 12425 records
+[2024-12-15T00:36:01.621+0000] {logging_mixin.py:154} INFO - Inserted 750 rows out of 750 records
+[2024-12-15T00:36:01.730+0000] {logging_mixin.py:154} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T00:36:01.784+0000] {logging_mixin.py:154} INFO - Inserted 12489 rows out of 12489 records
+[2024-12-15T00:36:01.922+0000] {logging_mixin.py:154} INFO - Inserted 12283 rows out of 12283 records
+[2024-12-15T00:36:01.922+0000] {logging_mixin.py:154} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T00:36:02.159+0000] {logging_mixin.py:154} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T00:36:02.294+0000] {logging_mixin.py:154} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T00:36:02.423+0000] {logging_mixin.py:154} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T00:36:02.525+0000] {logging_mixin.py:154} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T00:36:02.796+0000] {logging_mixin.py:154} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T00:36:02.805+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-12-15T00:36:02.810+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=daily_price_volume_etl, task_id=run_price_volume_pipeline, execution_date=20241214T000000, start_date=20241215T003427, end_date=20241215T003602
+[2024-12-15T00:36:02.847+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-12-15T00:36:02.854+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

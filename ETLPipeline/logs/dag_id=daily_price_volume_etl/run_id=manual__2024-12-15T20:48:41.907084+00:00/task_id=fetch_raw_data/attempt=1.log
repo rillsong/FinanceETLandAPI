@@ -1,0 +1,32 @@
+[2024-12-15T15:48:43.066-0500] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_price_volume_etl.fetch_raw_data manual__2024-12-15T20:48:41.907084+00:00 [queued]>
+[2024-12-15T15:48:43.072-0500] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_price_volume_etl.fetch_raw_data manual__2024-12-15T20:48:41.907084+00:00 [queued]>
+[2024-12-15T15:48:43.072-0500] {taskinstance.py:1361} INFO - Starting attempt 1 of 3
+[2024-12-15T15:48:43.077-0500] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): fetch_raw_data> on 2024-12-15 20:48:41.907084+00:00
+[2024-12-15T15:48:43.080-0500] {standard_task_runner.py:57} INFO - Started process 64 to run task
+[2024-12-15T15:48:43.082-0500] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'daily_price_volume_etl', 'fetch_raw_data', 'manual__2024-12-15T20:48:41.907084+00:00', '--job-id', '435', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpmm5mvke8']
+[2024-12-15T15:48:43.083-0500] {standard_task_runner.py:85} INFO - Job 435: Subtask fetch_raw_data
+[2024-12-15T15:48:43.103-0500] {task_command.py:416} INFO - Running <TaskInstance: daily_price_volume_etl.fetch_raw_data manual__2024-12-15T20:48:41.907084+00:00 [running]> on host 1e0c6de054af
+[2024-12-15T15:48:43.201-0500] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='daily_price_volume_etl' AIRFLOW_CTX_TASK_ID='fetch_raw_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-15T20:48:41.907084+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-15T20:48:41.907084+00:00'
+[2024-12-15T15:49:20.702-0500] {multi.py:176} ERROR - 
+1 Failed download:
+[2024-12-15T15:49:20.702-0500] {multi.py:189} ERROR - ['ABT']: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(host='query2.finance.yahoo.com', port=443): Read timed out. (read timeout=10)"))
+[2024-12-15T15:49:20.982-0500] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/context.py:314: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2024-12-15T15:49:20.983-0500] {etl.py:401} INFO - Raw data saved to /opt/***/dags/src/../../landing_zone/daily_price_volume_etl/fetch_raw_data/2024-12-15T20:48:41.907084+00:00raw_data.csv
+[2024-12-15T15:49:21.490-0500] {python.py:194} INFO - Done. Returned value was: Price        Date Ticker   Adj Close  ...         Low        Open      Volume
+0      2023-12-11      A  128.101379  ...  127.220001  127.620003   1897100.0
+1      2023-12-11    AAL   13.720000  ...   13.610000   13.760000  28383700.0
+2      2023-12-11   AAPL  192.238220  ...  191.419998  193.110001  60943700.0
+3      2023-12-11   ABBV  145.906372  ...  150.639999  150.669998   6343500.0
+4      2023-12-11   ABNB  142.910004  ...  140.850006  141.360001   4560500.0
+...           ...    ...         ...  ...         ...         ...         ...
+125694 2024-12-09    XYL  129.350006  ...  127.199997  127.589996   1933700.0
+125695 2024-12-09    YUM  139.080002  ...  137.279999  137.880005   1411000.0
+125696 2024-12-09    ZBH  109.470001  ...  107.779999  108.059998   1243000.0
+125697 2024-12-09   ZBRA  411.230011  ...  407.260010  408.440002    259600.0
+125698 2024-12-09    ZTS  178.149994  ...  175.080002  175.880005   2387300.0
+
+[125699 rows x 8 columns]
+[2024-12-15T15:49:21.880-0500] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=daily_price_volume_etl, task_id=fetch_raw_data, execution_date=20241215T204841, start_date=20241215T204843, end_date=20241215T204921
+[2024-12-15T15:49:21.899-0500] {local_task_job_runner.py:228} INFO - Task exited with return code 0

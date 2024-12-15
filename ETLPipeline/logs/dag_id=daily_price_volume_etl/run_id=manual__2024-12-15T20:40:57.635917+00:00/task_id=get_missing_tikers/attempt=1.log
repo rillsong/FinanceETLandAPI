@@ -1,0 +1,12 @@
+[2024-12-15T15:42:09.358-0500] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_price_volume_etl.get_missing_tikers manual__2024-12-15T20:40:57.635917+00:00 [queued]>
+[2024-12-15T15:42:09.362-0500] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_price_volume_etl.get_missing_tikers manual__2024-12-15T20:40:57.635917+00:00 [queued]>
+[2024-12-15T15:42:09.362-0500] {taskinstance.py:1361} INFO - Starting attempt 1 of 3
+[2024-12-15T15:42:09.369-0500] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): get_missing_tikers> on 2024-12-15 20:40:57.635917+00:00
+[2024-12-15T15:42:09.372-0500] {standard_task_runner.py:57} INFO - Started process 639 to run task
+[2024-12-15T15:42:09.374-0500] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'daily_price_volume_etl', 'get_missing_tikers', 'manual__2024-12-15T20:40:57.635917+00:00', '--job-id', '425', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpxjc2x4ek']
+[2024-12-15T15:42:09.377-0500] {standard_task_runner.py:85} INFO - Job 425: Subtask get_missing_tikers
+[2024-12-15T15:42:09.403-0500] {task_command.py:416} INFO - Running <TaskInstance: daily_price_volume_etl.get_missing_tikers manual__2024-12-15T20:40:57.635917+00:00 [running]> on host 1e0c6de054af
+[2024-12-15T15:42:09.509-0500] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='daily_price_volume_etl' AIRFLOW_CTX_TASK_ID='get_missing_tikers' AIRFLOW_CTX_EXECUTION_DATE='2024-12-15T20:40:57.635917+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-15T20:40:57.635917+00:00'
+[2024-12-15T15:42:09.593-0500] {python.py:194} INFO - Done. Returned value was: []
+[2024-12-15T15:42:09.608-0500] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=daily_price_volume_etl, task_id=get_missing_tikers, execution_date=20241215T204057, start_date=20241215T204209, end_date=20241215T204209
+[2024-12-15T15:42:09.639-0500] {local_task_job_runner.py:228} INFO - Task exited with return code 0

@@ -1,0 +1,35 @@
+[2024-12-15T15:47:11.938-0500] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_price_volume_etl.transform_data manual__2024-12-15T20:40:57.635917+00:00 [queued]>
+[2024-12-15T15:47:11.942-0500] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_price_volume_etl.transform_data manual__2024-12-15T20:40:57.635917+00:00 [queued]>
+[2024-12-15T15:47:11.943-0500] {taskinstance.py:1361} INFO - Starting attempt 2 of 3
+[2024-12-15T15:47:11.948-0500] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): transform_data> on 2024-12-15 20:40:57.635917+00:00
+[2024-12-15T15:47:11.951-0500] {standard_task_runner.py:57} INFO - Started process 1227 to run task
+[2024-12-15T15:47:11.953-0500] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'daily_price_volume_etl', 'transform_data', 'manual__2024-12-15T20:40:57.635917+00:00', '--job-id', '430', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmp_k6ie6yw']
+[2024-12-15T15:47:11.955-0500] {standard_task_runner.py:85} INFO - Job 430: Subtask transform_data
+[2024-12-15T15:47:11.975-0500] {task_command.py:416} INFO - Running <TaskInstance: daily_price_volume_etl.transform_data manual__2024-12-15T20:40:57.635917+00:00 [running]> on host 1e0c6de054af
+[2024-12-15T15:47:12.013-0500] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='daily_price_volume_etl' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-15T20:40:57.635917+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-15T20:40:57.635917+00:00'
+[2024-12-15T15:47:12.113-0500] {etl.py:133} INFO - Converted column 'Date' to datetime.
+[2024-12-15T15:47:12.182-0500] {etl.py:142} INFO - All columns validated successfully.
+[2024-12-15T15:47:12.229-0500] {logging_mixin.py:154} INFO - Number of records with out-of-range AdjClose: 0
+[2024-12-15T15:47:12.240-0500] {logging_mixin.py:154} INFO - Number of records with out-of-range Date: 0
+[2024-12-15T15:47:12.327-0500] {etl.py:188} INFO - Dropped 503 rows with missing values in ['ticker', 'date', 'adj_close', 'close', 'ret_1d'].
+[2024-12-15T15:47:12.328-0500] {etl.py:219} INFO - Transformation pipeline completed successfully.
+[2024-12-15T15:47:12.328-0500] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/context.py:314: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2024-12-15T15:47:12.863-0500] {etl.py:435} INFO - Processed data saved to /opt/***/dags/src/../../processed_zone/daily_price_volume_etl/transform_data/2024-12-15T20:40:57.635917+00:00processed_data.csv
+[2024-12-15T15:47:12.871-0500] {python.py:194} INFO - Done. Returned value was:        ticker        date   adj_close  ...        open     volume    ret_1d
+500         A  2023-12-12  127.922577  ...  128.050003  1453500.0 -0.001396
+1000        A  2023-12-13  132.839233  ...  129.089996  1731400.0  0.038435
+1500        A  2023-12-14  137.030823  ...  135.000000  2950500.0  0.031554
+2000        A  2023-12-15  135.858765  ...  137.240005  4876000.0 -0.008553
+2500        A  2023-12-18  136.603714  ...  137.589996  1634700.0  0.005483
+...       ...         ...         ...  ...         ...        ...       ...
+123941    ZTS  2024-12-03  176.940002  ...  176.710007  2679000.0  0.000735
+124443    ZTS  2024-12-04  175.320007  ...  174.600006  2687000.0 -0.009156
+124945    ZTS  2024-12-05  174.770004  ...  175.270004  2442000.0 -0.003137
+125447    ZTS  2024-12-06  176.460007  ...  174.770004  2551200.0  0.009670
+125949    ZTS  2024-12-09  178.149994  ...  175.880005  2387300.0  0.009577
+
+[125447 rows x 9 columns]
+[2024-12-15T15:47:13.466-0500] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=daily_price_volume_etl, task_id=transform_data, execution_date=20241215T204057, start_date=20241215T204711, end_date=20241215T204713
+[2024-12-15T15:47:13.500-0500] {local_task_job_runner.py:228} INFO - Task exited with return code 0

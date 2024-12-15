@@ -1,0 +1,21 @@
+[2024-12-15T15:42:10.868-0500] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_price_volume_etl.transform_data manual__2024-12-15T20:40:57.635917+00:00 [queued]>
+[2024-12-15T15:42:10.872-0500] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_price_volume_etl.transform_data manual__2024-12-15T20:40:57.635917+00:00 [queued]>
+[2024-12-15T15:42:10.872-0500] {taskinstance.py:1361} INFO - Starting attempt 1 of 3
+[2024-12-15T15:42:10.878-0500] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): transform_data> on 2024-12-15 20:40:57.635917+00:00
+[2024-12-15T15:42:10.881-0500] {standard_task_runner.py:57} INFO - Started process 642 to run task
+[2024-12-15T15:42:10.883-0500] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'daily_price_volume_etl', 'transform_data', 'manual__2024-12-15T20:40:57.635917+00:00', '--job-id', '426', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpksiwn4yu']
+[2024-12-15T15:42:10.885-0500] {standard_task_runner.py:85} INFO - Job 426: Subtask transform_data
+[2024-12-15T15:42:10.904-0500] {task_command.py:416} INFO - Running <TaskInstance: daily_price_volume_etl.transform_data manual__2024-12-15T20:40:57.635917+00:00 [running]> on host 1e0c6de054af
+[2024-12-15T15:42:10.942-0500] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='daily_price_volume_etl' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-15T20:40:57.635917+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-15T20:40:57.635917+00:00'
+[2024-12-15T15:42:11.015-0500] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/src/etl.py", line 424, in transform_and_save_data
+    df = transform_pipeline(raw_df)
+TypeError: transform_pipeline() missing 1 required positional argument: 'all_tickers'
+[2024-12-15T15:42:11.020-0500] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=daily_price_volume_etl, task_id=transform_data, execution_date=20241215T204057, start_date=20241215T204210, end_date=20241215T204211
+[2024-12-15T15:42:11.025-0500] {standard_task_runner.py:104} ERROR - Failed to execute job 426 for task transform_data (transform_pipeline() missing 1 required positional argument: 'all_tickers'; 642)
+[2024-12-15T15:42:11.068-0500] {local_task_job_runner.py:228} INFO - Task exited with return code 1

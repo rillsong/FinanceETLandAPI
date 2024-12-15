@@ -1,0 +1,27 @@
+services:
+  fastapi:
+    build:
+      context: ./APIService
+      dockerfile: Dockerfile
+    container_name: fastapi_app
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8000/health"]
+      interval: 60s   # Check every 60 seconds
+      retries: 3      # Retry 3 times before marking the container as unhealthy
+      start_period: 10s  # Start the health check after 10 seconds
+      timeout: 10s     # Timeout after 10 seconds
+    environment:
+      - DATABASE_URL=mysql+mysqlconnector://db_user:db_password@mysql-financial-db:3306/MarketData
+       # mysql+mysqlconnector://airflow:airflow@mysql:3306/airflow
+      - REDIS_URL=redis://redis:6379
+    # depends_on:
+    #   - mysql-financial-db
+    #   - redis
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    external: true 

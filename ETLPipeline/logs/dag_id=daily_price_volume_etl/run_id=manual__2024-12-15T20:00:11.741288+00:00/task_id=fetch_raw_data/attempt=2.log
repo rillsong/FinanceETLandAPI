@@ -1,0 +1,25 @@
+[2024-12-15T15:13:21.930-0500] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_price_volume_etl.fetch_raw_data manual__2024-12-15T20:00:11.741288+00:00 [queued]>
+[2024-12-15T15:13:21.934-0500] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_price_volume_etl.fetch_raw_data manual__2024-12-15T20:00:11.741288+00:00 [queued]>
+[2024-12-15T15:13:21.934-0500] {taskinstance.py:1361} INFO - Starting attempt 2 of 3
+[2024-12-15T15:13:21.940-0500] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): fetch_raw_data> on 2024-12-15 20:00:11.741288+00:00
+[2024-12-15T15:13:21.943-0500] {standard_task_runner.py:57} INFO - Started process 99 to run task
+[2024-12-15T15:13:21.945-0500] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'daily_price_volume_etl', 'fetch_raw_data', 'manual__2024-12-15T20:00:11.741288+00:00', '--job-id', '371', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmp2e4798fc']
+[2024-12-15T15:13:21.947-0500] {standard_task_runner.py:85} INFO - Job 371: Subtask fetch_raw_data
+[2024-12-15T15:13:21.967-0500] {task_command.py:416} INFO - Running <TaskInstance: daily_price_volume_etl.fetch_raw_data manual__2024-12-15T20:00:11.741288+00:00 [running]> on host 95e15d0a105f
+[2024-12-15T15:13:22.055-0500] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='daily_price_volume_etl' AIRFLOW_CTX_TASK_ID='fetch_raw_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-15T20:00:11.741288+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-15T20:00:11.741288+00:00'
+[2024-12-15T15:13:22.058-0500] {cache.py:130} INFO - Failed to create TzCache, reason: Error creating TzCache folder: '/home/***/.cache/py-yfinance' reason: [Errno 17] File exists: '/home/***/.cache/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+[2024-12-15T15:13:22.058-0500] {cache.py:130} INFO - Failed to create TzCache, reason: Error creating TzCache folder: '/home/***/.cache/py-yfinance' reason: [Errno 17] File exists: '/home/***/.cache/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+[2024-12-15T15:13:22.059-0500] {cache.py:130} INFO - Failed to create TzCache, reason: Error creating TzCache folder: '/home/***/.cache/py-yfinance' reason: [Errno 17] File exists: '/home/***/.cache/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+[2024-12-15T15:13:22.059-0500] {cache.py:130} INFO - Failed to create TzCache, reason: Error creating TzCache folder: '/home/***/.cache/py-yfinance' reason: [Errno 17] File exists: '/home/***/.cache/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+[2024-12-15T15:14:30.078-0500] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/src/etl.py", line 398, in save_raw_data
+    filename = str[kwargs["execution_date"]] + "raw_data.csv"
+TypeError: 'type' object is not subscriptable
+[2024-12-15T15:14:30.083-0500] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=daily_price_volume_etl, task_id=fetch_raw_data, execution_date=20241215T200011, start_date=20241215T201321, end_date=20241215T201430
+[2024-12-15T15:14:30.089-0500] {standard_task_runner.py:104} ERROR - Failed to execute job 371 for task fetch_raw_data ('type' object is not subscriptable; 99)
+[2024-12-15T15:14:30.103-0500] {local_task_job_runner.py:228} INFO - Task exited with return code 1

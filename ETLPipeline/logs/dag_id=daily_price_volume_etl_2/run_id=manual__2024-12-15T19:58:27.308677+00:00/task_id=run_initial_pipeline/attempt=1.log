@@ -1,0 +1,38 @@
+[2024-12-15T14:58:29.458-0500] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_price_volume_etl_2.run_initial_pipeline manual__2024-12-15T19:58:27.308677+00:00 [queued]>
+[2024-12-15T14:58:29.464-0500] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_price_volume_etl_2.run_initial_pipeline manual__2024-12-15T19:58:27.308677+00:00 [queued]>
+[2024-12-15T14:58:29.464-0500] {taskinstance.py:1361} INFO - Starting attempt 1 of 3
+[2024-12-15T14:58:29.470-0500] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): run_initial_pipeline> on 2024-12-15 19:58:27.308677+00:00
+[2024-12-15T14:58:29.475-0500] {standard_task_runner.py:57} INFO - Started process 75 to run task
+[2024-12-15T14:58:29.477-0500] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'daily_price_volume_etl_2', 'run_initial_pipeline', 'manual__2024-12-15T19:58:27.308677+00:00', '--job-id', '335', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmppdx_ue65']
+[2024-12-15T14:58:29.479-0500] {standard_task_runner.py:85} INFO - Job 335: Subtask run_initial_pipeline
+[2024-12-15T14:58:29.502-0500] {task_command.py:416} INFO - Running <TaskInstance: daily_price_volume_etl_2.run_initial_pipeline manual__2024-12-15T19:58:27.308677+00:00 [running]> on host 5299d9743533
+[2024-12-15T14:58:29.597-0500] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='daily_price_volume_etl_2' AIRFLOW_CTX_TASK_ID='run_initial_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2024-12-15T19:58:27.308677+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-15T19:58:27.308677+00:00'
+[2024-12-15T14:58:29.600-0500] {cache.py:130} INFO - Failed to create TzCache, reason: Error creating TzCache folder: '/home/***/.cache/py-yfinance' reason: [Errno 17] File exists: '/home/***/.cache/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+[2024-12-15T14:58:29.599-0500] {cache.py:130} INFO - Failed to create TzCache, reason: Error creating TzCache folder: '/home/***/.cache/py-yfinance' reason: [Errno 17] File exists: '/home/***/.cache/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+[2024-12-15T14:58:29.600-0500] {cache.py:130} INFO - Failed to create TzCache, reason: Error creating TzCache folder: '/home/***/.cache/py-yfinance' reason: [Errno 17] File exists: '/home/***/.cache/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+[2024-12-15T14:58:29.599-0500] {cache.py:130} INFO - Failed to create TzCache, reason: Error creating TzCache folder: '/home/***/.cache/py-yfinance' reason: [Errno 17] File exists: '/home/***/.cache/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+[2024-12-15T14:58:40.565-0500] {base.py:128} ERROR - Failed to get ticker 'O' reason: HTTPSConnectionPool(host='fc.yahoo.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1131)')))
+[2024-12-15T14:59:51.099-0500] {multi.py:176} ERROR - 
+4 Failed downloads:
+[2024-12-15T14:59:51.100-0500] {multi.py:189} ERROR - ['O']: YFTzMissingError('$%ticker%: possibly delisted; no timezone found')
+[2024-12-15T14:59:51.100-0500] {multi.py:189} ERROR - ['LIN', 'SYF']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+[2024-12-15T14:59:51.100-0500] {multi.py:189} ERROR - ['KO']: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(host='query2.finance.yahoo.com', port=443): Read timed out. (read timeout=10)"))
+[2024-12-15T14:59:51.480-0500] {etl.py:146} INFO - All columns validated successfully.
+[2024-12-15T14:59:51.526-0500] {logging_mixin.py:154} INFO - Number of records with out-of-range AdjClose: 0
+[2024-12-15T14:59:51.536-0500] {logging_mixin.py:154} INFO - Number of records with out-of-range Date: 0
+[2024-12-15T14:59:51.621-0500] {etl.py:192} INFO - Dropped 499 rows with missing values in ['ticker', 'date', 'adj_close', 'close', 'ret_1d'].
+[2024-12-15T14:59:51.622-0500] {etl.py:223} INFO - Transformation pipeline completed successfully.
+[2024-12-15T14:59:52.610-0500] {etl.py:309} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T14:59:52.903-0500] {etl.py:309} INFO - Inserted 12425 rows out of 12425 records
+[2024-12-15T14:59:53.004-0500] {etl.py:309} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T14:59:53.007-0500] {etl.py:309} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T14:59:53.037-0500] {etl.py:309} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T14:59:53.078-0500] {etl.py:309} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T14:59:53.219-0500] {etl.py:309} INFO - Inserted 12489 rows out of 12489 records
+[2024-12-15T14:59:53.378-0500] {etl.py:309} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T14:59:53.430-0500] {etl.py:309} INFO - Inserted 12283 rows out of 12283 records
+[2024-12-15T14:59:53.470-0500] {etl.py:309} INFO - Inserted 12250 rows out of 12250 records
+[2024-12-15T14:59:53.478-0500] {python.py:194} INFO - Done. Returned value was: None
+[2024-12-15T14:59:53.483-0500] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=daily_price_volume_etl_2, task_id=run_initial_pipeline, execution_date=20241215T195827, start_date=20241215T195829, end_date=20241215T195953
+[2024-12-15T14:59:53.516-0500] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-12-15T14:59:53.523-0500] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

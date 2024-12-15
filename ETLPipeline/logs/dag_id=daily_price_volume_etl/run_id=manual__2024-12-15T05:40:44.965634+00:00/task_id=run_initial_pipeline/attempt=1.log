@@ -1,0 +1,28 @@
+[2024-12-15T00:40:46.437-0500] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_price_volume_etl.run_initial_pipeline manual__2024-12-15T05:40:44.965634+00:00 [queued]>
+[2024-12-15T00:40:46.441-0500] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_price_volume_etl.run_initial_pipeline manual__2024-12-15T05:40:44.965634+00:00 [queued]>
+[2024-12-15T00:40:46.441-0500] {taskinstance.py:1361} INFO - Starting attempt 1 of 3
+[2024-12-15T00:40:46.447-0500] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): run_initial_pipeline> on 2024-12-15 05:40:44.965634+00:00
+[2024-12-15T00:40:46.450-0500] {standard_task_runner.py:57} INFO - Started process 110 to run task
+[2024-12-15T00:40:46.452-0500] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'daily_price_volume_etl', 'run_initial_pipeline', 'manual__2024-12-15T05:40:44.965634+00:00', '--job-id', '326', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmp2tu7_ijh']
+[2024-12-15T00:40:46.453-0500] {standard_task_runner.py:85} INFO - Job 326: Subtask run_initial_pipeline
+[2024-12-15T00:40:46.473-0500] {task_command.py:416} INFO - Running <TaskInstance: daily_price_volume_etl.run_initial_pipeline manual__2024-12-15T05:40:44.965634+00:00 [running]> on host d5d7f84d2f8f
+[2024-12-15T00:40:46.562-0500] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='daily_price_volume_etl' AIRFLOW_CTX_TASK_ID='run_initial_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2024-12-15T05:40:44.965634+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-15T05:40:44.965634+00:00'
+[2024-12-15T00:42:05.133-0500] {etl.py:136} INFO - All columns validated successfully.
+[2024-12-15T00:42:05.177-0500] {logging_mixin.py:154} INFO - Number of records with out-of-range AdjClose: 0
+[2024-12-15T00:42:05.188-0500] {logging_mixin.py:154} INFO - Number of records with out-of-range Date: 0
+[2024-12-15T00:42:05.274-0500] {etl.py:189} INFO - Dropped 503 rows with missing values in ['ticker', 'date', 'adj_close', 'close', 'ret_1d'].
+[2024-12-15T00:42:05.281-0500] {etl.py:223} INFO - Transformation pipeline completed successfully.
+[2024-12-15T00:42:06.325-0500] {logging_mixin.py:154} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T00:42:06.376-0500] {logging_mixin.py:154} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T00:42:06.442-0500] {logging_mixin.py:154} INFO - Inserted 12425 rows out of 12425 records
+[2024-12-15T00:42:06.562-0500] {logging_mixin.py:154} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T00:42:06.608-0500] {logging_mixin.py:154} INFO - Inserted 750 rows out of 750 records
+[2024-12-15T00:42:06.734-0500] {logging_mixin.py:154} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T00:42:06.934-0500] {logging_mixin.py:154} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T00:42:06.947-0500] {logging_mixin.py:154} INFO - Inserted 12489 rows out of 12489 records
+[2024-12-15T00:42:07.038-0500] {logging_mixin.py:154} INFO - Inserted 12283 rows out of 12283 records
+[2024-12-15T00:42:07.124-0500] {logging_mixin.py:154} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T00:42:07.163-0500] {logging_mixin.py:154} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T00:42:07.170-0500] {python.py:194} INFO - Done. Returned value was: None
+[2024-12-15T00:42:07.175-0500] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=daily_price_volume_etl, task_id=run_initial_pipeline, execution_date=20241215T054044, start_date=20241215T054046, end_date=20241215T054207
+[2024-12-15T00:42:07.201-0500] {local_task_job_runner.py:228} INFO - Task exited with return code 0

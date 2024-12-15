@@ -1,0 +1,31 @@
+[2024-12-15T03:21:07.890+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_price_volume_etl.run_initial_pipeline manual__2024-12-15T03:21:05.973178+00:00 [queued]>
+[2024-12-15T03:21:07.894+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_price_volume_etl.run_initial_pipeline manual__2024-12-15T03:21:05.973178+00:00 [queued]>
+[2024-12-15T03:21:07.894+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 3
+[2024-12-15T03:21:07.902+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): run_initial_pipeline> on 2024-12-15 03:21:05.973178+00:00
+[2024-12-15T03:21:07.905+0000] {standard_task_runner.py:57} INFO - Started process 414 to run task
+[2024-12-15T03:21:07.907+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'daily_price_volume_etl', 'run_initial_pipeline', 'manual__2024-12-15T03:21:05.973178+00:00', '--job-id', '54', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpkw47ydsq']
+[2024-12-15T03:21:07.908+0000] {standard_task_runner.py:85} INFO - Job 54: Subtask run_initial_pipeline
+[2024-12-15T03:21:07.929+0000] {task_command.py:416} INFO - Running <TaskInstance: daily_price_volume_etl.run_initial_pipeline manual__2024-12-15T03:21:05.973178+00:00 [running]> on host 57c3a4cf23dc
+[2024-12-15T03:21:08.027+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='daily_price_volume_etl' AIRFLOW_CTX_TASK_ID='run_initial_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2024-12-15T03:21:05.973178+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-15T03:21:05.973178+00:00'
+[2024-12-15T03:21:08.030+0000] {cache.py:130} INFO - Failed to create TzCache, reason: Error creating TzCache folder: '/home/***/.cache/py-yfinance' reason: [Errno 17] File exists: '/home/***/.cache/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+[2024-12-15T03:21:08.030+0000] {cache.py:130} INFO - Failed to create TzCache, reason: Error creating TzCache folder: '/home/***/.cache/py-yfinance' reason: [Errno 17] File exists: '/home/***/.cache/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+[2024-12-15T03:21:08.030+0000] {cache.py:130} INFO - Failed to create TzCache, reason: Error creating TzCache folder: '/home/***/.cache/py-yfinance' reason: [Errno 17] File exists: '/home/***/.cache/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+[2024-12-15T03:22:20.755+0000] {etl.py:134} INFO - All columns validated successfully.
+[2024-12-15T03:22:20.801+0000] {logging_mixin.py:154} INFO - Number of records with out-of-range AdjClose: 0
+[2024-12-15T03:22:20.814+0000] {logging_mixin.py:154} INFO - Number of records with out-of-range Date: 0
+[2024-12-15T03:22:20.910+0000] {etl.py:187} INFO - Dropped 503 rows with missing values in ['ticker', 'date', 'adj_close', 'close', 'ret_1d'].
+[2024-12-15T03:22:20.918+0000] {etl.py:221} INFO - Transformation pipeline completed successfully.
+[2024-12-15T03:22:22.203+0000] {logging_mixin.py:154} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T03:22:22.328+0000] {logging_mixin.py:154} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T03:22:22.356+0000] {logging_mixin.py:154} INFO - Inserted 12489 rows out of 12489 records
+[2024-12-15T03:22:22.431+0000] {logging_mixin.py:154} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T03:22:22.464+0000] {logging_mixin.py:154} INFO - Inserted 750 rows out of 750 records
+[2024-12-15T03:22:22.491+0000] {logging_mixin.py:154} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T03:22:22.538+0000] {logging_mixin.py:154} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T03:22:22.684+0000] {logging_mixin.py:154} INFO - Inserted 12425 rows out of 12425 records
+[2024-12-15T03:22:22.751+0000] {logging_mixin.py:154} INFO - Inserted 12283 rows out of 12283 records
+[2024-12-15T03:22:22.824+0000] {logging_mixin.py:154} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T03:22:22.862+0000] {logging_mixin.py:154} INFO - Inserted 12500 rows out of 12500 records
+[2024-12-15T03:22:22.874+0000] {python.py:194} INFO - Done. Returned value was: []
+[2024-12-15T03:22:22.881+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=daily_price_volume_etl, task_id=run_initial_pipeline, execution_date=20241215T032105, start_date=20241215T032107, end_date=20241215T032222
+[2024-12-15T03:22:22.915+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
