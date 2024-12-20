@@ -12,7 +12,7 @@
 
 ### API Development
 
-**Framework Selection**: we use`FastAPI + uvicorn` framework for it supports asynchronous tasks with multiple workers, also relatively lightweight.
+**Framework Selection**: we use`FastAPI + uvicorn` framework for it supports asynchronous tasks with multiple workers, also relatively lightweight. We use `asyncio` to perform async database operations.
 
 **Caching**: we integrate `fastapi_cache` with `redis.asyncio` as the caching backend to improve API response times by storing and retrieving frequently accessed data with expiration time.
 
@@ -22,7 +22,7 @@
 
 we use Docker to host Airflow ETL pipeline (localhost:8080), APIService (localhost:8000). Downloaded data is in the`MySql`container.
 
-run 
+run
 
 `docker compose -f docker-compose.base.yaml up --build`
 
